@@ -1,1 +1,1 @@
-ProyectoI_BasesI_2018
+Primer proyecto del curso de Bases de Datos I del primer semestre del 2018. Sistema administrador de Huertas
