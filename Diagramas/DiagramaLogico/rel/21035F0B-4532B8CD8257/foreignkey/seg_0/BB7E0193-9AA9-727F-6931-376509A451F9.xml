@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB7E0193-9AA9-727F-6931-376509A451F9" containerWithKeyObject="A930A698-6DB3-B18B-07C3-17FC2FE05ACD" localFKIndex="5891A426-F923-8985-F26B-6DBCDB11DFD8" name="FK_Hortaliza_TipoHortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E66C8623-213E-40A1-803B-8B01FB4FE09D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>TipoHortaliza</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04B2C32A-1DBB-BD1B-C3D2-256F057F5B86</referredTableID>
+<keyObject>09EDC2D7-A33A-4520-8481-F531D422EAF1</keyObject>
+<referredKeyID>09EDC2D7-A33A-4520-8481-F531D422EAF1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoTipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

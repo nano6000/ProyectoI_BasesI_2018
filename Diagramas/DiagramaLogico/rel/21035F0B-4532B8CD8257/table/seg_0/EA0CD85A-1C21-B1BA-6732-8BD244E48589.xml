@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA0CD85A-1C21-B1BA-6732-8BD244E48589" name="Division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E2B82A31-6ACC-F7DF-D196-27EDDC865ED5</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoDivision" id="19F3B082-1EBB-DB45-B2BE-EF1CE64748CF">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>19280937-FD80-714F-D6BC-E8B3726193DB</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_division</autoIncrementSequenceName>
+</Column>
+<Column name="nombre" id="0AE19EFD-7519-B71C-6FED-B17575E5321C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>91A1572B-4A20-ED36-E6B9-0AF50D818CC8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC169CD9-018C-A080-A27B-74417A249CB9" name="PK_Division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<generatorID>367C7BE0-094E-A57A-D3A4-46692D0DD449</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19F3B082-1EBB-DB45-B2BE-EF1CE64748CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD49590F-9B1C-7875-C5CB-B4C746AF6212" name="UN_Division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>57ABBBBE-B7EA-4D66-2776-F6520C759481</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AE19EFD-7519-B71C-6FED-B17575E5321C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21C20423-75BF-E3AE-8C15-7A937BB709B5" name="Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5FB2775A-E0E0-6FA7-518E-CBDC43DD3A62</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoColaborador" id="06C0155B-E108-F21D-3AAF-AE3206EDB5A9">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4453BD7C-D91C-DBCE-C539-403B75BB1257</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_colaborador</autoIncrementSequenceName>
+</Column>
+<Column name="activo" id="2CEA8658-4770-860F-E802-C1BAC074C27D">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>6E1DF58F-F38D-AD06-3AAC-F80D1FBB5BE0</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="encargado" id="CE7C3630-7142-2D16-E854-63BA8DD9CEAC">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>3E5C44AC-D3E6-DE6E-81B5-BE4FF568A1B0</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76699B4B-D1BD-B660-71C8-931ECD0597FD" referredColumn="06C0155B-E108-F21D-3AAF-AE3206EDB5A9"/>
+</associations>
+</Column>
+<Column name="Persona_cedula" id="DE6F6EF1-B885-4ECD-DB17-36F4E843A9FD">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<generatorID>56969C8C-5B0C-E936-B798-C4A7AA9D99F0</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF8A16BC-1076-5335-4EA4-CE62842B396C" referredColumn="0EEDDC6C-4E54-3CC3-21CB-E937B2C9DA8C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6468D8F5-36AB-9186-165B-D6C1E95850DA" name="PK_Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>EA95F8E6-11E7-A130-B4AB-BFF6A775F408</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06C0155B-E108-F21D-3AAF-AE3206EDB5A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57425E01-0BA3-4687-2B7D-A1F354E557C7" name="Colaborador__IDX">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8A420F81-384E-36C2-B759-8D091C0275AC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DE6F6EF1-B885-4ECD-DB17-36F4E843A9FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C49C091-8765-B123-7C31-657920CA3AA2" name="FK_Colaborador_Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>1945237A-C4CB-3914-414F-71282F4EC125</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE7C3630-7142-2D16-E854-63BA8DD9CEAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44CE66B7-ED76-FE10-E39C-4ECC3C36A657" name="FK_Colaborador_Persona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<generatorID>8A420F81-384E-36C2-B759-8D091C0275AC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE6F6EF1-B885-4ECD-DB17-36F4E843A9FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

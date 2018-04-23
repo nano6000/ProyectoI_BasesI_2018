@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82E5FD90-5E28-B92B-4D3E-CF8E2CE5C2EF" name="Distrito">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>D7885059-B990-C732-A562-956943AA399F</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="AD827420-B0E4-2F38-3874-388E930F3AD8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C33C0995-1E2B-F661-EE13-BE70BCFDB423</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_distrito</autoIncrementSequenceName>
+</Column>
+<Column name="nombre" id="8C866D29-08A7-B02E-C7DC-D7585F4B0942">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>D7D964B7-1604-39BE-2ADD-27212160A7DC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="canton" id="23485F08-2380-6F57-54A3-9DB883FC1E52">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>EE9276B1-EA0E-7BAA-3308-B4674FC8D4E7</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0157469-865B-3456-C134-532AE99963B9" referredColumn="5A429613-63BA-4688-D54A-FEF5B63919C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="146BFA40-6EBA-78DA-B2BF-D4349C080085" name="PK_Distrito">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>86B77C20-23EA-3D39-5E07-CF7A2AA8B44E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD827420-B0E4-2F38-3874-388E930F3AD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C95C3D31-9116-D5C8-B26B-DC523B236500" name="FK_Distrito_Canton">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>CE767033-EB86-4FFA-2070-FC0EC6438666</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23485F08-2380-6F57-54A3-9DB883FC1E52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

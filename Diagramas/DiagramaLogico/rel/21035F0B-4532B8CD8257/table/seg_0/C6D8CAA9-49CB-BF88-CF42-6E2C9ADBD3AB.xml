@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6D8CAA9-49CB-BF88-CF42-6E2C9ADBD3AB" name="VitaminaColor">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>BB57E301-8329-624C-8F60-FFE85950F65E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoVitamina" id="17F4BCFE-7202-FC53-62AD-A75BDA997A3A">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4E0E3420-0D73-4678-CD38-F8489C02A90C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F793D2F8-F050-A6A2-47E3-C1DB4603C22E" referredColumn="325B091C-D544-CA39-B1AF-1EA1FB00084A"/>
+</associations>
+</Column>
+<Column name="codigoColor" id="6081D342-0C5E-BA4C-A1C2-9025050101CB">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>1453FFC6-31EA-5BAE-CCC8-17CACEE74E1D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82734595-04A0-262F-F855-7F784A772A2A" referredColumn="36716EE4-1550-421C-17DE-F31DCE75964F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC668EB0-C970-407C-B697-AEB32436EE5E" name="PK_VitaminaColor">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 18:14:37 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17F4BCFE-7202-FC53-62AD-A75BDA997A3A"/>
+<colUsage columnID="6081D342-0C5E-BA4C-A1C2-9025050101CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A451F130-9931-653F-348B-EB8F5B75745E" name="UN_VitaminaColor">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>63D14662-7FA6-331C-7B32-B8334D951D4D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17F4BCFE-7202-FC53-62AD-A75BDA997A3A"/>
+<colUsage columnID="6081D342-0C5E-BA4C-A1C2-9025050101CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDE39017-20C3-076A-64E1-F62105296B85" name="FK_VitaminaColor_Color">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>0A06A183-D10D-F79C-BB90-C2FBEBD744F5</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6081D342-0C5E-BA4C-A1C2-9025050101CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CAAE1CC-9A5F-F494-E6EA-F947533C63BD" name="FK_VitaminaColor_Vitamina">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>91485C2E-E114-8961-B435-8186A4123994</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17F4BCFE-7202-FC53-62AD-A75BDA997A3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

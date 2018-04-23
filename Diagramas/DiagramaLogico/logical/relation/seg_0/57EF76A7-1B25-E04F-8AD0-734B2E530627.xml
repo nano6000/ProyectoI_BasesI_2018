@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_arbol_tipoXilema" directorySegmentName="seg_0" id="57EF76A7-1B25-E04F-8AD0-734B2E530627">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:03:12 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>349261F8-76CB-AF06-6179-A6B427B68C19</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C91AC853-21E9-7D70-92F3-B214D514FC42</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FD2F6248-FCDD-31AD-B2D4-96C810C7D218</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

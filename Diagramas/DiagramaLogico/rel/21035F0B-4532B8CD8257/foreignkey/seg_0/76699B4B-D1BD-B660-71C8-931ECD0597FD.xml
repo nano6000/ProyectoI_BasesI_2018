@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="76699B4B-D1BD-B660-71C8-931ECD0597FD" containerWithKeyObject="21C20423-75BF-E3AE-8C15-7A937BB709B5" localFKIndex="6C49C091-8765-B123-7C31-657920CA3AA2" name="FK_Colaborador_Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>1945237A-C4CB-3914-414F-71282F4EC125</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Colaborador</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>21C20423-75BF-E3AE-8C15-7A937BB709B5</referredTableID>
+<keyObject>6468D8F5-36AB-9186-165B-D6C1E95850DA</keyObject>
+<referredKeyID>6468D8F5-36AB-9186-165B-D6C1E95850DA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoColaborador</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

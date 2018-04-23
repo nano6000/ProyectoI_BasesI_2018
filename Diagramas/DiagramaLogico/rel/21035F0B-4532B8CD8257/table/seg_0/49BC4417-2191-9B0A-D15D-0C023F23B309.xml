@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49BC4417-2191-9B0A-D15D-0C023F23B309" name="TelefonoPersona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C12C5C3A-2794-D650-42B0-A1AEBF079153</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="telefono" id="FD745CDF-CC70-516F-B5B1-D54144A2E4A4">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>33BD575F-AF51-0E9E-4DA8-1933B92D7FF8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cedula" id="9D617388-C971-07C6-4B38-830CB5745990">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>52735ADC-A330-3FC7-D5C8-88E1B10656AC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="186413B4-C73E-4086-F3FE-E5AFF0F277B9" referredColumn="0EEDDC6C-4E54-3CC3-21CB-E937B2C9DA8C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CED6D0A6-282C-69AB-AF5A-19BA9B5439D1" name="UN_TelefonoPersona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5DFE9706-7D54-836B-9107-231E0C7001B0</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD745CDF-CC70-516F-B5B1-D54144A2E4A4"/>
+<colUsage columnID="9D617388-C971-07C6-4B38-830CB5745990"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63E2226E-DC5A-106F-2450-B7DFBC2191CD" name="FK_TelefonoPersona_Persona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>45B98039-72A0-E29D-9E01-4AC6FF2C7899</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D617388-C971-07C6-4B38-830CB5745990"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

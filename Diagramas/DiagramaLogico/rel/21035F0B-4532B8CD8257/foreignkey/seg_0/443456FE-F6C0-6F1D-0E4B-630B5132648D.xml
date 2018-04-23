@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="443456FE-F6C0-6F1D-0E4B-630B5132648D" containerWithKeyObject="BF166911-F88F-AC6B-C114-40653AE8B1CD" localFKIndex="B8CD1004-3DA1-81FD-E02B-A4E5F9D93A75" name="FK_CambioClave_Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C561EDCD-8531-3930-5B8B-4A69BB16FE76</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Usuario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A03A8CD8-B7BE-8F9F-53AF-A1C5245DFF0D</referredTableID>
+<keyObject>F78ECE41-770F-B261-6790-7E9ABCA8F3A5</keyObject>
+<referredKeyID>F78ECE41-770F-B261-6790-7E9ABCA8F3A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>username</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

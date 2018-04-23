@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62484FC8-8789-B91A-D7B2-51E045933CCA" name="Especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4A4D0438-D91D-5E52-782D-1E66703026DC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoEspecie" id="1295C0D9-EF37-302B-196C-5D1E8F805A42">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>3D1DCA19-141F-A361-965E-07001B8678DF</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_especie</autoIncrementSequenceName>
+</Column>
+<Column name="nombre" id="A51E166A-ADA4-FCF0-21A7-83B1D7E28517">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B1B9BD2E-CB12-CB3F-2805-EC10BFD23D1C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="4B2D4AA9-CCED-B43F-3FB3-8F7E7F1A21FD">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4323452D-85BC-D0AF-B24A-3A84809983BA</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F102DC1F-C845-F8BF-6973-003FDE505BA7" referredColumn="53AB2FE1-8ABC-DE0A-97CF-0E257990A455"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF931D67-ECCC-FFC5-061A-A847F1A49716" name="PK_Especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4B3A5D92-39B0-4074-3591-FC6CDA6B8EDB</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1295C0D9-EF37-302B-196C-5D1E8F805A42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05A97AF5-2E71-0732-24E0-DF0DDF493425" name="UN_Especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>BF9F4560-36DA-00EC-10D1-1B6A3F4E989E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A51E166A-ADA4-FCF0-21A7-83B1D7E28517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF5405AA-9EC1-10F6-7776-D964174683D7" name="FK_Especie_Genero">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B726D063-5BA7-2AB4-1B4F-768E7872B0CC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2D4AA9-CCED-B43F-3FB3-8F7E7F1A21FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

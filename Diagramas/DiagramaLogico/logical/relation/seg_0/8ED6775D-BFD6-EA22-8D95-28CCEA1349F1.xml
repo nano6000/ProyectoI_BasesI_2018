@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_colaboradorHuerta_colaborador" directorySegmentName="seg_0" id="8ED6775D-BFD6-EA22-8D95-28CCEA1349F1">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 06:57:33 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>EA95F8E6-11E7-A130-B4AB-BFF6A775F408</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5FB2775A-E0E0-6FA7-518E-CBDC43DD3A62</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0499C344-682D-9DB5-D052-A729FFA2C434</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

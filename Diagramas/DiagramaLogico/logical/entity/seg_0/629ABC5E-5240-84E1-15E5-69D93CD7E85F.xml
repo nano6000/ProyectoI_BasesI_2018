@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="629ABC5E-5240-84E1-15E5-69D93CD7E85F" name="Provincia">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:58:33 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="AEACA6B2-5089-5331-50DE-0862797E1FA6">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:58:44 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="5B00AF96-6969-BAE8-3B3F-1A61219B2100">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:58:56 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pais" id="55792F96-5625-2280-A350-3B59796325F7">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:03:00 UTC</createdTime>
+<generatorID>F4AAEA7A-47CA-3649-FCDC-6D51E28BA858</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>EF706DE0-927C-7ACC-9265-54CD1C93B029</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4D5F685E-C744-4AC3-7112-91DEAC075857" name="PK_provincia">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:02:36 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AEACA6B2-5089-5331-50DE-0862797E1FA6</newElementsIDs>
+<usedAttributes>
+<attributeRef>AEACA6B2-5089-5331-50DE-0862797E1FA6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

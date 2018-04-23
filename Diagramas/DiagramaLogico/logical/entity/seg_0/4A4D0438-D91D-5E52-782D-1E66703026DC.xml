@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A4D0438-D91D-5E52-782D-1E66703026DC" name="Especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:43:56 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoEspecie" id="3D1DCA19-141F-A361-965E-07001B8678DF">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:44:04 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="B1B9BD2E-CB12-CB3F-2805-EC10BFD23D1C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:44:15 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoGenero" id="4323452D-85BC-D0AF-B24A-3A84809983BA">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:46:55 UTC</createdTime>
+<generatorID>B726D063-5BA7-2AB4-1B4F-768E7872B0CC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>87B93E01-FB3A-5DE9-10F9-F97AA3537A72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B3A5D92-39B0-4074-3591-FC6CDA6B8EDB" name="PK_especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:44:26 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>3D1DCA19-141F-A361-965E-07001B8678DF</newElementsIDs>
+<usedAttributes>
+<attributeRef>3D1DCA19-141F-A361-965E-07001B8678DF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BF9F4560-36DA-00EC-10D1-1B6A3F4E989E" name="UQ_especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:44:45 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<newElementsIDs>B1B9BD2E-CB12-CB3F-2805-EC10BFD23D1C</newElementsIDs>
+<usedAttributes>
+<attributeRef>B1B9BD2E-CB12-CB3F-2805-EC10BFD23D1C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

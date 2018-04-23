@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_arbol_tipoCambium" directorySegmentName="seg_0" id="5BC11F44-9B30-7579-E196-DBB35837992E">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:05:43 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>32500FB8-D691-13F7-E0A4-37E72389FF48</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A898EF0E-239E-D839-BBC4-B4E7BD44FAE1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FD2F6248-FCDD-31AD-B2D4-96C810C7D218</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

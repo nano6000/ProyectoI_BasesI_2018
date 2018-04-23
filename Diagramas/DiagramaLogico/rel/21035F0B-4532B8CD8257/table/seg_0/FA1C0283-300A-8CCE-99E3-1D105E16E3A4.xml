@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA1C0283-300A-8CCE-99E3-1D105E16E3A4" name="Arbol">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>FD2F6248-FCDD-31AD-B2D4-96C810C7D218</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoPlanta" id="7EE5FBF8-7B86-B064-4868-DF639CAB80E0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>9E6EFC3B-A061-EC92-37E5-63087F4B16C0</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2896B2EE-3EF2-FDAD-A9AE-178D14319A9C" referredColumn="E0C1AC27-2CC9-E5F3-D01D-2C3DC050F3BD"/>
+</associations>
+</Column>
+<Column name="peligroExticion" id="BAACFBFF-0BFB-0CE9-A628-F0F843C05F03">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>D7C4CE40-56E3-7535-0FFB-29E9DE078C98</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<constraintName>CK_peligroExtincion</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;NO&apos;" description=""/>
+<valueDef value="&apos;SI&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;NO&apos;</defaultValue>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especie" id="54F786DB-C277-A54B-98E3-F1DF5936B8C7">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>ADB41034-57EF-BCC6-AB0F-F5616A5250A8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0C7F38D-B4F5-72A1-98E2-27A3D176C93B" referredColumn="1295C0D9-EF37-302B-196C-5D1E8F805A42"/>
+</associations>
+</Column>
+<Column name="corteza" id="85645126-7713-1E8F-0723-6FD020699966">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5C46E0F6-4A7D-1839-270D-A533D4D62B6B</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED13D3EB-EA02-4E47-89B2-9CAA4DD5AF94" referredColumn="3873521F-46CD-976F-DFC3-76E6FE8443A9"/>
+</associations>
+</Column>
+<Column name="xilema" id="85288F4B-43AF-89AA-BBE6-D60E6EA3CC37">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>129A85A0-CA80-33E3-61A3-040E9974CB1C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B41EE143-2F54-ECFB-B467-925FB5154B39" referredColumn="1283A419-799F-E4BC-753C-76C04DCED719"/>
+</associations>
+</Column>
+<Column name="cambium" id="E1369AE6-09AB-1A00-E4EF-EE4E1BC464FE">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C22F7300-3776-41CA-73C0-78C441D8D8EA</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0617BAC-483E-409F-BEAB-6AC4F28964E5" referredColumn="8505CFCC-9970-0CE7-B5C9-7C01C966FD07"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8EC35A2E-2E7E-9D8E-0C29-993BCFA79A88" name="PK_Arbol">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>4F96E881-AB0E-D54C-F551-B8EE88E9C2A8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE5FBF8-7B86-B064-4868-DF639CAB80E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2678B6B5-B88F-A799-AF2A-72994806D3B3" name="FK_Arbol_Especie">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C3DEFD46-CB0C-8029-0D4A-4873125B003F</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54F786DB-C277-A54B-98E3-F1DF5936B8C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD121A90-2A73-AF6E-4100-71011CB5A1A3" name="FK_Arbol_Planta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>9F2E883A-6540-97B2-8DD5-7CFBFFE9F6BA</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE5FBF8-7B86-B064-4868-DF639CAB80E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FA799BF-3AB8-433A-04F2-C28A8BC61127" name="FK_Arbol_TipoCambium">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5BC11F44-9B30-7579-E196-DBB35837992E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1369AE6-09AB-1A00-E4EF-EE4E1BC464FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9096D2A6-01A3-53B0-659B-315701AE6ACD" name="FK_Arbol_TipoCorteza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5866EAC4-48CA-A2B1-A8E1-FEC2393C4F15</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85645126-7713-1E8F-0723-6FD020699966"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAF8DB2A-A13D-64E3-1079-10A875D75A97" name="FK_Arbol_TipoXilema">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>57EF76A7-1B25-E04F-8AD0-734B2E530627</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85288F4B-43AF-89AA-BBE6-D60E6EA3CC37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

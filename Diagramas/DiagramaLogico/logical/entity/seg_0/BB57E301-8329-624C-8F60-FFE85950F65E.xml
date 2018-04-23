@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB57E301-8329-624C-8F60-FFE85950F65E" name="VitaminaColor">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:15:29 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoVitamina" id="4E0E3420-0D73-4678-CD38-F8489C02A90C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:16:28 UTC</createdTime>
+<generatorID>91485C2E-E114-8961-B435-8186A4123994</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>A9ADFE2C-705B-4F4B-98C7-10EADFD6979F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoColor" id="1453FFC6-31EA-5BAE-CCC8-17CACEE74E1D">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:16:58 UTC</createdTime>
+<generatorID>0A06A183-D10D-F79C-BB90-C2FBEBD744F5</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>935DE974-4412-AD01-AF6B-EC881B7F3107</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63D14662-7FA6-331C-7B32-B8334D951D4D" name="UQ_vitaminaColor">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:17:56 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<newElementsIDs>91485C2E-E114-8961-B435-8186A4123994,0A06A183-D10D-F79C-BB90-C2FBEBD744F5</newElementsIDs>
+<usedAttributes>
+<attributeRef>4E0E3420-0D73-4678-CD38-F8489C02A90C</attributeRef>
+<attributeRef>1453FFC6-31EA-5BAE-CCC8-17CACEE74E1D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

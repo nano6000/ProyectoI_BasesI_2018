@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_emailPersona_persona" directorySegmentName="seg_0" id="10BBCB54-C131-0DE5-8069-5A5D8B05447E">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:41:58 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>DB52D648-71B6-72BA-E3E2-D4B4DE235B42</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA8C9DA5-2DEF-05D3-3B2A-CA645276617C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>533AF13B-E8B4-047D-C70C-19FF88AE5249</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

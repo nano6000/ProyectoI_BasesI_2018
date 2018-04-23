@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B0D2BA23-229D-A2EB-1D8B-DE621A3F0137" containerWithKeyObject="A930A698-6DB3-B18B-07C3-17FC2FE05ACD" localFKIndex="F2A196A4-2956-6D25-E685-C54C199DB812" name="FK_Hortaliza_ColorHortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>BD8B0F78-C334-E92B-E02A-368BEE844026</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Color</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88165C69-5845-ED16-6715-5D13118DFC6B</referredTableID>
+<keyObject>67E7E2EB-FD69-3D86-B988-CF1F425820F2</keyObject>
+<referredKeyID>67E7E2EB-FD69-3D86-B988-CF1F425820F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoColor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

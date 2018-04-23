@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="333D16A5-F12B-19B0-831B-5732FCE9667D" containerWithKeyObject="AD2AC124-26EC-8F97-1B25-1090DC30D9E0" localFKIndex="E7473309-EE01-6F1D-D6BE-0C9EBE58B6CC" name="FK_Clase_Division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>44FC579A-D1CB-5C3D-61C0-E960C2FD7CF2</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Division</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EA0CD85A-1C21-B1BA-6732-8BD244E48589</referredTableID>
+<keyObject>FC169CD9-018C-A080-A27B-74417A249CB9</keyObject>
+<referredKeyID>FC169CD9-018C-A080-A27B-74417A249CB9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoDivision</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

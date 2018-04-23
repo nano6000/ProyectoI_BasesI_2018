@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="82734595-04A0-262F-F855-7F784A772A2A" containerWithKeyObject="C6D8CAA9-49CB-BF88-CF42-6E2C9ADBD3AB" localFKIndex="FDE39017-20C3-076A-64E1-F62105296B85" name="FK_VitaminaColor_Color">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>0A06A183-D10D-F79C-BB90-C2FBEBD744F5</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Color</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88165C69-5845-ED16-6715-5D13118DFC6B</referredTableID>
+<keyObject>67E7E2EB-FD69-3D86-B988-CF1F425820F2</keyObject>
+<referredKeyID>67E7E2EB-FD69-3D86-B988-CF1F425820F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoColor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

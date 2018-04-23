@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_vitaminaColor_color" directorySegmentName="seg_0" id="0A06A183-D10D-F79C-BB90-C2FBEBD744F5">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:16:58 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>80A9004C-5BC2-175D-A679-6C6778539C89</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>83743094-5EF4-7636-18F9-4CA8FE8B427F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB57E301-8329-624C-8F60-FFE85950F65E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

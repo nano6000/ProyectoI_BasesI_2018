@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_especie_genero" directorySegmentName="seg_0" id="B726D063-5BA7-2AB4-1B4F-768E7872B0CC">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:46:55 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>1F433B73-A9BC-77D1-2A81-5C745B7D82EC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5505F058-82BD-1649-A05E-60366B1044B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4A4D0438-D91D-5E52-782D-1E66703026DC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

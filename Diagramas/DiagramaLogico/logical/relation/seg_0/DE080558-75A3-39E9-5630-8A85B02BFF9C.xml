@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_plantaHuerta_huerta" directorySegmentName="seg_0" id="DE080558-75A3-39E9-5630-8A85B02BFF9C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:09:26 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>E89674E4-8A57-7B40-F68F-B986941A7392</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD4B2FED-AED5-BEE6-132D-BCCC3F3BEA48</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D86550FA-5EEE-B02E-5F73-0CB01BC9B546</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

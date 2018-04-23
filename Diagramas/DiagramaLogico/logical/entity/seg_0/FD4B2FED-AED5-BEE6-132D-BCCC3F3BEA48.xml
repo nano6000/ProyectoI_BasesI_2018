@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD4B2FED-AED5-BEE6-132D-BCCC3F3BEA48" name="Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:05:03 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoHuerta" id="E8D0837C-4E6D-82DA-1393-46FE9C033D8F">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:05:11 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="2C87A79D-75B5-412C-F07C-527B212DCD2B">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:05:33 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="activo" id="7E6B7EB9-4533-B965-8060-8554142C5BC7">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:06:14 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ubicacion" id="DFF9B37A-3D07-415D-87A5-2A81E6994A55">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:07:15 UTC</createdTime>
+<generatorID>B9F43070-8D0C-1A51-7BC3-F2D7868C13DE</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>C33C0995-1E2B-F661-EE13-BE70BCFDB423</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacion" id="B6003F89-FBD1-68AD-4ABE-C68BB141B510">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:22:41 UTC</createdTime>
+<generatorID>65483BF2-7F50-C48C-2103-DDA54EF67CF8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>2045D7EE-C063-C9A1-3388-BD8C6A06DEB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E89674E4-8A57-7B40-F68F-B986941A7392" name="PK_huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:06:47 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E8D0837C-4E6D-82DA-1393-46FE9C033D8F</newElementsIDs>
+<usedAttributes>
+<attributeRef>E8D0837C-4E6D-82DA-1393-46FE9C033D8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

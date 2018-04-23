@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A21D0F45-8410-AA42-71C7-31191F0BCC0C" name="PlantaHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>D86550FA-5EEE-B02E-5F73-0CB01BC9B546</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="precio" id="295D1676-F848-B418-1998-39210FC950B2">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E79B5E92-CAF0-5A18-747A-5732D8AC378B</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<constraintName>CK_precio</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="planta" id="00E82ED2-275F-CCA8-FD12-42387C4706E9">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>6DA08015-1667-B274-AFC4-8A632F95B3B4</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="782E7DC1-7880-12B8-14E7-313DEAFF1F93" referredColumn="E0C1AC27-2CC9-E5F3-D01D-2C3DC050F3BD"/>
+</associations>
+</Column>
+<Column name="huerta" id="A057733A-4B02-7596-4F48-C22D8108C9EE">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>8DB7004A-4434-19E1-E8CC-EAA9A7CD106C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BA1560F-5D83-EDB1-2AC3-7394E02DE325" referredColumn="5C0D30C1-2A20-EFE9-E021-C75A9BBE6AD8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BF96888-BDEE-FDA3-C252-03843B0087DA" name="UN_PlantaHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>533C60E8-31FC-8B9C-535E-B379936A3F9D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00E82ED2-275F-CCA8-FD12-42387C4706E9"/>
+<colUsage columnID="A057733A-4B02-7596-4F48-C22D8108C9EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE21EADF-2BEA-69EB-9238-290A3DB9B383" name="FK_PlantaHuerta_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>DE080558-75A3-39E9-5630-8A85B02BFF9C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A057733A-4B02-7596-4F48-C22D8108C9EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEEE336D-550D-005C-1C41-3F994AA09B6A" name="FK_PlantaHuerta_Planta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>C5A72D69-75EA-F98E-8040-2D45760B32F7</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00E82ED2-275F-CCA8-FD12-42387C4706E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

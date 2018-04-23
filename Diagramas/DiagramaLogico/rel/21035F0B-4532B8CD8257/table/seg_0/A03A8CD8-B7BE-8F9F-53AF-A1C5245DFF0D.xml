@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A03A8CD8-B7BE-8F9F-53AF-A1C5245DFF0D" name="Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>D5C5CB20-BAC3-535C-7A73-75EF5E2CF93B</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="username" id="1CDD1D1F-1BFF-9197-7D7B-240475A24C4A">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>389EB856-0269-BB05-4A56-E22F3D8E1533</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="7AA8F9B3-C55D-33E9-2DF4-DC6107B528D8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>0BD2D4E2-E66E-478A-262A-B9D6206957A3</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="691A1ECE-E3AA-BF76-C199-19F39917D2E4">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>798C328A-B990-D938-0DA9-527D53260991</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<constraintName>CK_estado</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;OFFLINE&apos;" description=""/>
+<valueDef value="&apos;ONLINE&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoUsuario" id="77318CBE-7A21-2BE0-FD05-52BF2D852C2E">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B995F92A-A460-20FE-33EB-82136DF8DFA2</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B0744EC-A2EC-C8BD-431D-BF4FC5480C90" referredColumn="B2B0DB9D-2818-E622-1F60-988EE27AA5A8"/>
+</associations>
+</Column>
+<Column name="cedula" id="26033125-D4C5-4B3D-AE58-65AB1C54F95F">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>852621B9-03D8-CF29-DF73-618B8C70616A</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D35BF8F8-B703-02AA-3E75-6FED400A7490" referredColumn="0EEDDC6C-4E54-3CC3-21CB-E937B2C9DA8C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F78ECE41-770F-B261-6790-7E9ABCA8F3A5" name="PK_Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>231D4621-95B6-2F07-8695-0DB9CA4DD841</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CDD1D1F-1BFF-9197-7D7B-240475A24C4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8623C4F2-D980-00AE-7952-F881EEE36217" name="UN_Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 18:30:57 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26033125-D4C5-4B3D-AE58-65AB1C54F95F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27696FE7-31E5-B685-6BD7-DDAD1D2D5ADD" name="FK_Usuario_Persona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>2EFBF36D-3CA1-3C13-64CA-A44488E80EE8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26033125-D4C5-4B3D-AE58-65AB1C54F95F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="773F9E62-148F-6C30-5E69-9B2DDB2A20CE" name="FK_Usuario_TipoUsuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>CC9F3722-3D10-A118-DAFB-52D796600B57</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77318CBE-7A21-2BE0-FD05-52BF2D852C2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

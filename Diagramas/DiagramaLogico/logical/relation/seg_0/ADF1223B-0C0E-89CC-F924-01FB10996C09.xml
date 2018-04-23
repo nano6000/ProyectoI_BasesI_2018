@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_familia_orden" directorySegmentName="seg_0" id="ADF1223B-0C0E-89CC-F924-01FB10996C09">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:46:15 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>52C470D3-E799-84D3-0172-73192E1D009F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>39F4C23B-C596-F01F-7EFF-0ECAE4E107DE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E828C70-FA74-FAAC-9B34-D062C17E954B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

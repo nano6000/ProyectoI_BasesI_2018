@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8BA1560F-5D83-EDB1-2AC3-7394E02DE325" containerWithKeyObject="A21D0F45-8410-AA42-71C7-31191F0BCC0C" localFKIndex="CE21EADF-2BEA-69EB-9238-290A3DB9B383" name="FK_PlantaHuerta_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>DE080558-75A3-39E9-5630-8A85B02BFF9C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Huerta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E9015A75-C100-186C-3ECC-881F7599F117</referredTableID>
+<keyObject>56102E74-655A-5003-3045-232B4CDBF8D0</keyObject>
+<referredKeyID>56102E74-655A-5003-3045-232B4CDBF8D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoHuerta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

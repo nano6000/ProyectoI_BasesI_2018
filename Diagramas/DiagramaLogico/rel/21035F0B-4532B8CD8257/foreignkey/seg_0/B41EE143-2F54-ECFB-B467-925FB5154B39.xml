@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B41EE143-2F54-ECFB-B467-925FB5154B39" containerWithKeyObject="FA1C0283-300A-8CCE-99E3-1D105E16E3A4" localFKIndex="EAF8DB2A-A13D-64E3-1079-10A875D75A97" name="FK_Arbol_TipoXilema">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>57EF76A7-1B25-E04F-8AD0-734B2E530627</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>TipoXilema</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ECEE8197-1019-91E2-7F79-F809668FA7A4</referredTableID>
+<keyObject>C566FE7E-AA62-8CB5-0C31-570031338F42</keyObject>
+<referredKeyID>C566FE7E-AA62-8CB5-0C31-570031338F42</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoXilema</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

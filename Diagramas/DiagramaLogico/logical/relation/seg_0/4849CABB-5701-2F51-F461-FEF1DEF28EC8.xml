@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_persona_pais" directorySegmentName="seg_0" id="4849CABB-5701-2F51-F461-FEF1DEF28EC8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:45:36 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>B56BD865-5191-8492-24EF-AD47D5B55ABA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AFBB7DD4-ECEA-084B-1113-E63F128BEE23</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DA8C9DA5-2DEF-05D3-3B2A-CA645276617C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

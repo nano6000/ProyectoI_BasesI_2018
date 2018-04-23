@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_hortaliza_tipoHortaliza" directorySegmentName="seg_0" id="E66C8623-213E-40A1-803B-8B01FB4FE09D">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:14:45 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>7A09671C-25DD-E50D-6E67-655F79DA79E5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F8C312EE-6C1C-3FA6-F8E6-3D5BF5097B90</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CCFCD7B0-4A41-3700-B8E5-FD193D69911D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94A53D3A-BE2C-B825-4677-50126BB359D0" name="CalificacionHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>483032F2-8AA9-1BDD-F5C8-24172175971E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoCalificacion" id="7693D584-1EEF-6BC0-9B8D-1F77E5CAB6E3">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<generatorID>659CC985-410D-ADDF-AB23-9B2A9750C5BD</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_calificacionHuerta</autoIncrementSequenceName>
+</Column>
+<Column name="fechaHora" id="E465489F-B6F7-89B2-7F2F-F5BA4C131242">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B9500534-E868-9027-CA5A-78DA9603210E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentario" id="FB497670-0B52-1474-4EB5-F3EA149DF144">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>0E81CD8A-A67B-FE55-78CB-A1541C601368</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puntuacion" id="95C33F1F-4563-299F-88CA-6D4206C9DBD9">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>962E4B1D-7296-7873-1A3A-6AE5D05C3265</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<constraintName>CK_puntuacion</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="username" id="50B2B7EB-15E3-6951-4F6F-B87EEF165C14">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>56447007-3913-C220-9925-CE7A9B6B8C76</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1A3F3FA-A0F3-D814-041A-0C8052A501A0" referredColumn="1CDD1D1F-1BFF-9197-7D7B-240475A24C4A"/>
+</associations>
+</Column>
+<Column name="codigoHuerta" id="B89E6A12-A4F8-6184-D917-84B982EA66FF">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>57692314-CDC2-6480-A1DB-AA121EDCA0FE</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5525CCB-2233-CEDB-824A-4B2AA260AA68" referredColumn="5C0D30C1-2A20-EFE9-E021-C75A9BBE6AD8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3BC0969-13D0-4ACA-7391-53BE2B6C17DD" name="PK_CalificacionHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 17:25:26 UTC</createdTime>
+<generatorID>811E4B4A-BEEF-B920-083D-A42E8920C97D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7693D584-1EEF-6BC0-9B8D-1F77E5CAB6E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3742EE9-EE67-DA38-B6AD-7537AD0884C5" name="UN_CalificacionHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>152430DD-5091-F448-824D-A48D4976902B</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50B2B7EB-15E3-6951-4F6F-B87EEF165C14"/>
+<colUsage columnID="B89E6A12-A4F8-6184-D917-84B982EA66FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="079BEA48-87E5-99B5-FA3C-3561E522C7CA" name="FK_CalificacionHuerta_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>ECCB993F-52AD-534C-7D86-AD2EC0C88B9A</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B89E6A12-A4F8-6184-D917-84B982EA66FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0521DE0B-2250-8273-972E-7C78A689F0DA" name="FK_CalificacionHuerta_Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>25F0ADCE-D98C-5FB8-8D19-8CF3147144D3</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50B2B7EB-15E3-6951-4F6F-B87EEF165C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

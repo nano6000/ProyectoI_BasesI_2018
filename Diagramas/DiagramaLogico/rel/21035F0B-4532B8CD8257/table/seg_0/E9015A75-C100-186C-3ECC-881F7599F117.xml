@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9015A75-C100-186C-3ECC-881F7599F117" name="Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>FD4B2FED-AED5-BEE6-132D-BCCC3F3BEA48</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoHuerta" id="5C0D30C1-2A20-EFE9-E021-C75A9BBE6AD8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E8D0837C-4E6D-82DA-1393-46FE9C033D8F</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>99999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_huerta</autoIncrementSequenceName>
+</Column>
+<Column name="nombre" id="2A18039C-3AAB-6176-A8EB-CE95E53FE2FF">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>2C87A79D-75B5-412C-F07C-527B212DCD2B</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="3BA10204-A6DC-464E-1F40-72FF02981E21">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>7E6B7EB9-4533-B965-8060-8554142C5BC7</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ubicacion" id="117CEF1C-A171-EBC4-98DA-80011080363C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>DFF9B37A-3D07-415D-87A5-2A81E6994A55</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD031BF8-806C-4694-105A-3504FE0DBA50" referredColumn="AD827420-B0E4-2F38-3874-388E930F3AD8"/>
+</associations>
+</Column>
+<Column name="localizacion" id="8E7513CE-BB27-A6D3-2D22-22427F1CCCC3">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B6003F89-FBD1-68AD-4ABE-C68BB141B510</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E83F819A-E364-9B3F-F4E5-43B57F9B91D1" referredColumn="B0F72EC1-6CD9-0F46-2F78-4D351703034D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56102E74-655A-5003-3045-232B4CDBF8D0" name="PK_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E89674E4-8A57-7B40-F68F-B986941A7392</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C0D30C1-2A20-EFE9-E021-C75A9BBE6AD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09C82245-1F0B-FB2C-A56D-4D0DD955AE2F" name="UN_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 18:33:29 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A18039C-3AAB-6176-A8EB-CE95E53FE2FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="568EFC41-B6B9-67B3-EB89-759228DE97AC" name="Huerta__IDX">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>65483BF2-7F50-C48C-2103-DDA54EF67CF8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8E7513CE-BB27-A6D3-2D22-22427F1CCCC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA35F532-10F8-989E-5AB4-2D56D5EADA3E" name="FK_Huerta_Distrito">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>B9F43070-8D0C-1A51-7BC3-F2D7868C13DE</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="117CEF1C-A171-EBC4-98DA-80011080363C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="111F0518-1F38-1C00-34EE-3BED5AA35BE0" name="FK_Huerta_Localizacion">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>65483BF2-7F50-C48C-2103-DDA54EF67CF8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E7513CE-BB27-A6D3-2D22-22427F1CCCC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

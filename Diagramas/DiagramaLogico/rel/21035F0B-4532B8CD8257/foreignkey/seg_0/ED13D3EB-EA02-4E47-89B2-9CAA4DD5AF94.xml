@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED13D3EB-EA02-4E47-89B2-9CAA4DD5AF94" containerWithKeyObject="FA1C0283-300A-8CCE-99E3-1D105E16E3A4" localFKIndex="9096D2A6-01A3-53B0-659B-315701AE6ACD" name="FK_Arbol_TipoCorteza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5866EAC4-48CA-A2B1-A8E1-FEC2393C4F15</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>TipoCorteza</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>064D23E6-5E86-727A-A719-A2FD3D1D4212</referredTableID>
+<keyObject>069CF7A6-9796-24E6-9BDC-7076371DCC68</keyObject>
+<referredKeyID>069CF7A6-9796-24E6-9BDC-7076371DCC68</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoCorteza</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

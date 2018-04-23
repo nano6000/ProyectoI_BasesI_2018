@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D86550FA-5EEE-B02E-5F73-0CB01BC9B546" name="PlantaHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:02:58 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="precio" id="E79B5E92-CAF0-5A18-747A-5732D8AC378B">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:03:10 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoPlanta" id="6DA08015-1667-B274-AFC4-8A632F95B3B4">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:08:10 UTC</createdTime>
+<generatorID>C5A72D69-75EA-F98E-8040-2D45760B32F7</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>AAA8F080-710E-B179-A202-1DFBEFDD23E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoHuerta" id="8DB7004A-4434-19E1-E8CC-EAA9A7CD106C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:09:26 UTC</createdTime>
+<generatorID>DE080558-75A3-39E9-5630-8A85B02BFF9C</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>E8D0837C-4E6D-82DA-1393-46FE9C033D8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="533C60E8-31FC-8B9C-535E-B379936A3F9D" name="UQ_plantaHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:09:44 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<newElementsIDs>C5A72D69-75EA-F98E-8040-2D45760B32F7,DE080558-75A3-39E9-5630-8A85B02BFF9C</newElementsIDs>
+<usedAttributes>
+<attributeRef>6DA08015-1667-B274-AFC4-8A632F95B3B4</attributeRef>
+<attributeRef>8DB7004A-4434-19E1-E8CC-EAA9A7CD106C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

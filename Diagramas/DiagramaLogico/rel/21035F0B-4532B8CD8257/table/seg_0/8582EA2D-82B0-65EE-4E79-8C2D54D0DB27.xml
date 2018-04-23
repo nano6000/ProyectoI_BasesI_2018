@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8582EA2D-82B0-65EE-4E79-8C2D54D0DB27" name="ColaboradorHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>0499C344-682D-9DB5-D052-A729FFA2C434</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="huerta" id="A94EFEB8-3F19-6345-9A9F-A0415FB0F906">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>84FCE5B8-3C35-96E8-4C80-C1B80F721354</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C55C2F7-2DE1-6D64-6A79-4908ADFFB9A8" referredColumn="5C0D30C1-2A20-EFE9-E021-C75A9BBE6AD8"/>
+</associations>
+</Column>
+<Column name="colaborador" id="98AA09FF-115E-C2E1-2675-67087A8A9444">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>66F2F955-6957-8C27-C995-2904312224FE</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6EC17A9-67E9-D2A0-350C-CE6CCADC2F74" referredColumn="06C0155B-E108-F21D-3AAF-AE3206EDB5A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2935DD3C-A937-D913-0964-2BBCCBEC97A2" name="UN_ColaboradorHuerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>A3C40A3E-9D60-BB4E-7B49-70740E9F86D1</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98AA09FF-115E-C2E1-2675-67087A8A9444"/>
+<colUsage columnID="A94EFEB8-3F19-6345-9A9F-A0415FB0F906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FBA57D0-6B79-A434-28DF-A28750B80C41" name="FK_ColabHuerta_Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>8ED6775D-BFD6-EA22-8D95-28CCEA1349F1</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98AA09FF-115E-C2E1-2675-67087A8A9444"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E486F850-4ED2-D343-0FAA-5228C171FDA5" name="FK_ColaboradorHuerta_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>15F7500D-E417-966B-EB1F-CF99A4FD9D84</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A94EFEB8-3F19-6345-9A9F-A0415FB0F906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A930A698-6DB3-B18B-07C3-17FC2FE05ACD" name="Hortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>CCFCD7B0-4A41-3700-B8E5-FD193D69911D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoPlanta" id="E7930A32-171C-123E-4576-70EA088AABF0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>8A876553-8A3A-8258-80F3-74A3BC42C1E9</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0</autoIncrementStartWith>
+<autoIncrementMaxValue>999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_planta</autoIncrementSequenceName>
+<associations>
+<colAssociation fkAssociation="E9B63229-4C8F-61D5-C5F5-940D175E2203" referredColumn="E0C1AC27-2CC9-E5F3-D01D-2C3DC050F3BD"/>
+</associations>
+</Column>
+<Column name="codigoTipo" id="9BB25897-CA92-A749-B350-5E29C2D7845B">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>ACB18F46-47FB-1D4F-7918-67095A7769D3</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB7E0193-9AA9-727F-6931-376509A451F9" referredColumn="43EFA561-348C-3BE7-A4E4-F1F9AB5C5A49"/>
+</associations>
+</Column>
+<Column name="codigoColor" id="438D43C3-31D5-2CFC-716C-F08315B71EDC">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>03591A5A-3110-0D55-509D-F229C022EBAD</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0D2BA23-229D-A2EB-1D8B-DE621A3F0137" referredColumn="36716EE4-1550-421C-17DE-F31DCE75964F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB3A45A4-4EEC-20A5-7E93-690D3EEDB46A" name="PK_Hortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>9960B30B-2F7A-B2F0-5AA1-EB5148C2C845</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7930A32-171C-123E-4576-70EA088AABF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2A196A4-2956-6D25-E685-C54C199DB812" name="FK_Hortaliza_ColorHortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>BD8B0F78-C334-E92B-E02A-368BEE844026</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="438D43C3-31D5-2CFC-716C-F08315B71EDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AAAA7B5-156D-1681-FB01-F5BA0718DAFE" name="FK_Hortaliza_Planta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>398837E5-7A78-438A-DDCB-2A246A53B347</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7930A32-171C-123E-4576-70EA088AABF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5891A426-F923-8985-F26B-6DBCDB11DFD8" name="FK_Hortaliza_TipoHortaliza">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>E66C8623-213E-40A1-803B-8B01FB4FE09D</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BB25897-CA92-A749-B350-5E29C2D7845B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DiagramaLogico" id="A1B3A73A-7D4C-9357-FF39-AA29BEF5C0CE" version="3.5">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:30:39 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A1B3A73A-7D4C-9357-FF39-AA29BEF5C0CE</designId>
+</OSDM_Design>

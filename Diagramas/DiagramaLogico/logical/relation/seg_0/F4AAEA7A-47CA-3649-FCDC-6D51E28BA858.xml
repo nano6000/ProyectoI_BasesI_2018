@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_provincia_pais" directorySegmentName="seg_0" id="F4AAEA7A-47CA-3649-FCDC-6D51E28BA858">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:03:00 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>B56BD865-5191-8492-24EF-AD47D5B55ABA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AFBB7DD4-ECEA-084B-1113-E63F128BEE23</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>629ABC5E-5240-84E1-15E5-69D93CD7E85F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09F3C60E-EBFF-3BDB-ECE2-96E3FD66D654" name="TipoUsuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:44:48 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="44D0F57F-2724-F0EC-ECDD-BABDD1D292D5">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:44:55 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="0755EE70-625F-4514-E317-4FDC9B742C53">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:45:11 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="15649529-D748-A20B-CBF3-03300A242789" name="PK_tipoUsuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:45:55 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>44D0F57F-2724-F0EC-ECDD-BABDD1D292D5</newElementsIDs>
+<usedAttributes>
+<attributeRef>44D0F57F-2724-F0EC-ECDD-BABDD1D292D5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

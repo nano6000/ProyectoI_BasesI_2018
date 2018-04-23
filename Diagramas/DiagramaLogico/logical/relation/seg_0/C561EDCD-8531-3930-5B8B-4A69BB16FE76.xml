@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_cambioClave_usuario" directorySegmentName="seg_0" id="C561EDCD-8531-3930-5B8B-4A69BB16FE76">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:57:50 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>231D4621-95B6-2F07-8695-0DB9CA4DD841</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5C5CB20-BAC3-535C-7A73-75EF5E2CF93B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>82CD3042-A2A9-3AE0-7B00-381F24DB95E3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0617BAC-483E-409F-BEAB-6AC4F28964E5" containerWithKeyObject="FA1C0283-300A-8CCE-99E3-1D105E16E3A4" localFKIndex="9FA799BF-3AB8-433A-04F2-C28A8BC61127" name="FK_Arbol_TipoCambium">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>5BC11F44-9B30-7579-E196-DBB35837992E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>TipoCambium</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99CEEA47-227C-A5BE-539A-E5C443E4F2DD</referredTableID>
+<keyObject>84DD98FB-9C48-D2DA-5B48-EBA22DF5E5E6</keyObject>
+<referredKeyID>84DD98FB-9C48-D2DA-5B48-EBA22DF5E5E6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoCambium</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

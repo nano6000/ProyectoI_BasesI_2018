@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D5C5CB20-BAC3-535C-7A73-75EF5E2CF93B" name="Usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:32:10 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="username" id="389EB856-0269-BB05-4A56-E22F3D8E1533">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:41:35 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="0BD2D4E2-E66E-478A-262A-B9D6206957A3">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:42:05 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="798C328A-B990-D938-0DA9-527D53260991">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:42:33 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="B995F92A-A460-20FE-33EB-82136DF8DFA2">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:49:05 UTC</createdTime>
+<generatorID>CC9F3722-3D10-A118-DAFB-52D796600B57</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>44D0F57F-2724-F0EC-ECDD-BABDD1D292D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cedula" id="852621B9-03D8-CF29-DF73-618B8C70616A">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:50:02 UTC</createdTime>
+<generatorID>2EFBF36D-3CA1-3C13-64CA-A44488E80EE8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>08F84363-45D4-3592-7795-16DA1A71B8C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="231D4621-95B6-2F07-8695-0DB9CA4DD841" name="PK_usuario">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:44:06 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>389EB856-0269-BB05-4A56-E22F3D8E1533</newElementsIDs>
+<usedAttributes>
+<attributeRef>389EB856-0269-BB05-4A56-E22F3D8E1533</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

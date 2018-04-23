@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="533AF13B-E8B4-047D-C70C-19FF88AE5249" name="EmailPersona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:54:08 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoEmail" id="0779DD98-3388-861F-C113-4F12F0DCF211">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 15:52:45 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="0AD51C49-DACE-22CE-AE79-FAFA0B708136">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 00:55:01 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cedula" id="1625001F-A2CC-5890-C5C6-91C6FBFCD8A3">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:41:58 UTC</createdTime>
+<generatorID>10BBCB54-C131-0DE5-8069-5A5D8B05447E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>08F84363-45D4-3592-7795-16DA1A71B8C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14DF95FE-1D1A-14A1-41AB-1CFB5ACE3F77" name="UQ_emailPersona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 01:43:23 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<newElementsIDs>0AD51C49-DACE-22CE-AE79-FAFA0B708136,10BBCB54-C131-0DE5-8069-5A5D8B05447E</newElementsIDs>
+<usedAttributes>
+<attributeRef>0AD51C49-DACE-22CE-AE79-FAFA0B708136</attributeRef>
+<attributeRef>1625001F-A2CC-5890-C5C6-91C6FBFCD8A3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3CF64B0F-04CF-7403-4A09-003CF5A3E556" name="PK_emailPersona">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 15:53:02 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>0779DD98-3388-861F-C113-4F12F0DCF211</newElementsIDs>
+<usedAttributes>
+<attributeRef>0779DD98-3388-861F-C113-4F12F0DCF211</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

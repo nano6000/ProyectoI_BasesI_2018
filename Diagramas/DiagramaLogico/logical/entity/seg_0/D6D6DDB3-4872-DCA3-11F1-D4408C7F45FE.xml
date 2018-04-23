@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D6D6DDB3-4872-DCA3-11F1-D4408C7F45FE" name="Transaccion">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:27:29 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoTransaccion" id="E42CF7CB-C712-E059-38D3-A5C5DF89C95D">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:27:45 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaHora" id="7E628BD7-F753-F980-5FAA-F1B31D9324E4">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:27:58 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipoTransaccion" id="0DAF84E2-A402-67A7-C9C8-A6843E2E7773">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:31:26 UTC</createdTime>
+<generatorID>27A69FDA-3F50-B544-7B96-A888FB99F152</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>6DE1EFD3-540B-AD40-8E0C-D50170B2708A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoHuerta" id="FCFAA854-976F-626F-779E-CEF81483E92A">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:32:03 UTC</createdTime>
+<generatorID>BC455C24-8AAF-B21B-FE94-0647D1390524</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>E8D0837C-4E6D-82DA-1393-46FE9C033D8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoPlanta" id="0672A56C-C864-5544-327A-8EF20C4BC1BB">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:32:23 UTC</createdTime>
+<generatorID>EB0EBF86-60D0-A03F-CA91-6DF5228E9166</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>AAA8F080-710E-B179-A202-1DFBEFDD23E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cedula" id="156074F5-0AE5-8091-F281-F5847E2F0A49">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:33:40 UTC</createdTime>
+<generatorID>36A77DA0-E8A6-A684-94C8-341C344436F8</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>08F84363-45D4-3592-7795-16DA1A71B8C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C14F0BA-ED45-B71E-83D4-17C8F1E24AAE" name="PK_transaccion">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:28:25 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E42CF7CB-C712-E059-38D3-A5C5DF89C95D</newElementsIDs>
+<usedAttributes>
+<attributeRef>E42CF7CB-C712-E059-38D3-A5C5DF89C95D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

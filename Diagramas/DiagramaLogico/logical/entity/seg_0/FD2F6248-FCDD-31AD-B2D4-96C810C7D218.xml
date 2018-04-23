@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD2F6248-FCDD-31AD-B2D4-96C810C7D218" name="Arbol">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:49:57 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="peligroExticion" id="D7C4CE40-56E3-7535-0FFB-29E9DE078C98">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:50:02 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<constraintName>CK_peligroExtincion</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;NO&apos;" description=""/>
+<valueDef value="&apos;SI&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;NO&apos;</defaultValue>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoEspecie" id="ADB41034-57EF-BCC6-AB0F-F5616A5250A8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:57:59 UTC</createdTime>
+<generatorID>C3DEFD46-CB0C-8029-0D4A-4873125B003F</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>3D1DCA19-141F-A361-965E-07001B8678DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoPlanta" id="9E6EFC3B-A061-EC92-37E5-63087F4B16C0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:58:15 UTC</createdTime>
+<generatorID>9F2E883A-6540-97B2-8DD5-7CFBFFE9F6BA</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>AAA8F080-710E-B179-A202-1DFBEFDD23E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoCorteza" id="5C46E0F6-4A7D-1839-270D-A533D4D62B6B">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:01:21 UTC</createdTime>
+<generatorID>5866EAC4-48CA-A2B1-A8E1-FEC2393C4F15</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>B70BAD28-5925-90FD-EBF1-9E333CEFD231</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoXilema" id="129A85A0-CA80-33E3-61A3-040E9974CB1C">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:03:12 UTC</createdTime>
+<generatorID>57EF76A7-1B25-E04F-8AD0-734B2E530627</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>CC018B6C-F772-8BA8-6CDB-9FE33C6180E8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoCambium" id="C22F7300-3776-41CA-73C0-78C441D8D8EA">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:05:43 UTC</createdTime>
+<generatorID>5BC11F44-9B30-7579-E196-DBB35837992E</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>B074FF30-E12D-0575-C2EA-2417120FA903</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F96E881-AB0E-D54C-F551-B8EE88E9C2A8" name="PK_arbol">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:23:44 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9F2E883A-6540-97B2-8DD5-7CFBFFE9F6BA,9F2E883A-6540-97B2-8DD5-7CFBFFE9F6BA</newElementsIDs>
+<usedAttributes>
+<attributeRef>9E6EFC3B-A061-EC92-37E5-63087F4B16C0</attributeRef>
+<attributeRef>9E6EFC3B-A061-EC92-37E5-63087F4B16C0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

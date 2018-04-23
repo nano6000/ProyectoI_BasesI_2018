@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5525CCB-2233-CEDB-824A-4B2AA260AA68" containerWithKeyObject="94A53D3A-BE2C-B825-4677-50126BB359D0" localFKIndex="079BEA48-87E5-99B5-FA3C-3561E522C7CA" name="FK_CalificacionHuerta_Huerta">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 08:33:12 UTC</createdTime>
+<generatorID>ECCB993F-52AD-534C-7D86-AD2EC0C88B9A</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<referredTableLongName>Huerta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E9015A75-C100-186C-3ECC-881F7599F117</referredTableID>
+<keyObject>56102E74-655A-5003-3045-232B4CDBF8D0</keyObject>
+<referredKeyID>56102E74-655A-5003-3045-232B4CDBF8D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoHuerta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

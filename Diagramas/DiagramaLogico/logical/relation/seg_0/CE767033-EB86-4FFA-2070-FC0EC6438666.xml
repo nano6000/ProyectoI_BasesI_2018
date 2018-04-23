@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_distrito_canton" directorySegmentName="seg_0" id="CE767033-EB86-4FFA-2070-FC0EC6438666">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:03:27 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>2EC9D42B-6449-47B1-B756-93468FC37906</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DEC481FC-CE3F-2E14-6C07-853CD199F018</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7885059-B990-C732-A562-956943AA399F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FB2775A-E0E0-6FA7-518E-CBDC43DD3A62" name="Colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:08:36 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoColaborador" id="4453BD7C-D91C-DBCE-C539-403B75BB1257">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:08:43 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="activo" id="6E1DF58F-F38D-AD06-3AAC-F80D1FBB5BE0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:08:58 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cedula" id="56969C8C-5B0C-E936-B798-C4A7AA9D99F0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:10:08 UTC</createdTime>
+<generatorID>8A420F81-384E-36C2-B759-8D091C0275AC</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>08F84363-45D4-3592-7795-16DA1A71B8C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="encargador" id="3E5C44AC-D3E6-DE6E-81B5-BE4FF568A1B0">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:28:59 UTC</createdTime>
+<generatorID>1945237A-C4CB-3914-414F-71282F4EC125</generatorID>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<referedAttribute>4453BD7C-D91C-DBCE-C539-403B75BB1257</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EA95F8E6-11E7-A130-B4AB-BFF6A775F408" name="PK_colaborador">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:10:57 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4453BD7C-D91C-DBCE-C539-403B75BB1257</newElementsIDs>
+<usedAttributes>
+<attributeRef>4453BD7C-D91C-DBCE-C539-403B75BB1257</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

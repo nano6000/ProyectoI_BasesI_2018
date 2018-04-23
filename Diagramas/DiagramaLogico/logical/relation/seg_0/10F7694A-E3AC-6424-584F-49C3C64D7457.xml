@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_canton_provincia" directorySegmentName="seg_0" id="10F7694A-E3AC-6424-584F-49C3C64D7457">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 02:03:16 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<sourcePk>4D5F685E-C744-4AC3-7112-91DEAC075857</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>629ABC5E-5240-84E1-15E5-69D93CD7E85F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DEC481FC-CE3F-2E14-6C07-853CD199F018</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

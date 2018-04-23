@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2B82A31-6ACC-F7DF-D196-27EDDC865ED5" name="Division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:37:02 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigoDivision" id="19280937-FD80-714F-D6BC-E8B3726193DB">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:37:09 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="91A1572B-4A20-ED36-E6B9-0AF50D818CC8">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:37:41 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="57ABBBBE-B7EA-4D66-2776-F6520C759481" name="UQ_division">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 07:38:21 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<newElementsIDs>91A1572B-4A20-ED36-E6B9-0AF50D818CC8</newElementsIDs>
+<usedAttributes>
+<attributeRef>91A1572B-4A20-ED36-E6B9-0AF50D818CC8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="367C7BE0-094E-A57A-D3A4-46692D0DD449" name="PK_divisionv1">
+<createdBy>esteb</createdBy>
+<createdTime>2018-04-21 15:52:19 UTC</createdTime>
+<ownerDesignName>DiagramaLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="21035F0B-BE9B-77B5-1CB0-4532B8CD8257" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>19280937-FD80-714F-D6BC-E8B3726193DB</newElementsIDs>
+<usedAttributes>
+<attributeRef>19280937-FD80-714F-D6BC-E8B3726193DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
