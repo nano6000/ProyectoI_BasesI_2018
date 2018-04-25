@@ -1,2 +1,0 @@
-BASE: C:\app\Nano
-HOME: C:\app\Nano\product\11.2.0\dbhome_1
