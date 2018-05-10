@@ -1,3 +1,7 @@
+<?php
+include_once('scripts/conexion.inc');
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,46 +29,51 @@
 		</header>
 
 		<div class="row justify-content-center" style="margin: 2% 0 0 0">
-			<form id="myform" class="needs-validation col-lg-6 col-md-6 col-sm-6 col-6" novalidate="" action="info.php">
+			<form id="myform" method="post" class="needs-validation col-lg-6 col-md-6 col-sm-6 col-6" novalidate="" action="scripts/form-input.php">
 				<div class="form-row">
 					<label> Nombre:</label>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
-						<input id="frstName-input" type="text" class="form-control" placeholder="Primer Nombre" required>
+					<div class="form-group col-md-6">
+						<input name="frstName-input" type="text" class="form-control" placeholder="Primer Nombre" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
 					<div class="form-group col-md-6">
-						<input id="secndName-input"	type="text" class="form-control" placeholder="Segundo Nombre">
+						<input name="secndName-input"	type="text" class="form-control" placeholder="Segundo Nombre">
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
-						<input id="frstLstName-input" type="text" class="form-control" placeholder="Primer Apellido" required>
+					<div class="form-group col-md-6">
+						<input name="frstLstName-input" type="text" class="form-control" placeholder="Primer Apellido" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
-					<div class="form-group col-md-6">	
-						<input id="secndLstName-input" type="text" class="form-control" placeholder="Segundo Apellido">
+					<div class="form-group col-md-6">
+						<input name="secndLstName-input" type="text" class="form-control" placeholder="Segundo Apellido">
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Nacionalidad:</label>
-						<select name="citizenship" id="citizenship" class="custom-select" required>
-							<option value="">Select</option>
-							<option value="US">Estados Unidos</option>
+						<select name="citizenship" name="citizenship" class="custom-select" required>
+							<option>Seleccione una opcion</option>
+							<?php
+								$matriz = oci_parse($conn, "select * from ".$usuario.".Pais");
+								oci_execute($matriz);
+								while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
+									echo "<option value=\"$fila[0]\">" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
+							?>
 						</select>
 						<div class="invalid-feedback">
 							Por favor, seleccione una opción.
 						</div>
 					</div>
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Cedula:</label>
-						<input id="id-input" type="text" class="form-control" pattern="[0-9]{9}" placeholder="Cedula" required>
+						<input name="id-input" type="text" class="form-control" pattern="[0-9]{9}" placeholder="Cedula" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 							Ej. 123456789
@@ -74,63 +83,63 @@
 				<div class="form-row">
 					<div class="form-group col-md-6">
 						<label>E-mail 1:</label>
-						<input id="email1-input" type="email" class="form-control" pattern=".+@.+\.(com|es)" placeholder="E-mail 1" required>
+						<input name="email1-input" type="text" class="form-control" pattern=".+@.+\.(com|es)" placeholder="E-mail 1" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
 					<div class="form-group col-md-6">
 						<label>E-mail 2:</label>
-						<input id="email2-input" type="email" class="form-control" pattern=".+@.+\.(com|es)" placeholder="E-mail">
+						<input name="email2-input" type="email" class="form-control" pattern=".+@.+\.(com|es)" placeholder="E-mail">
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Telefono 1:</label>
-						<input id="tel1-input" type="text" class="form-control" pattern="(\(\+[0-9]{3}\))?[0-9]{8}[0-9]*" placeholder="Telefono 1" required>
+						<input name="tel1-input" type="text" class="form-control" pattern="(\(\+[0-9]{3}\))?[0-9]{8}[0-9]*" placeholder="Telefono 1" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Telefono 2:</label>
-						<input id="tel2-input" type="text" class="form-control" pattern="(\(\+[0-9]{3}\))?[0-9]{8}[0-9]*" placeholder="Telefono 2">
+						<input name="tel2-input" type="text" class="form-control" pattern="(\(\+[0-9]{3}\))?[0-9]{8}[0-9]*" placeholder="Telefono 2">
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Fecha de nacimiento:</label>
-						<input id="date-input" class="form-control" type="date" required>
+						<input name="date-input" class="form-control" type="date" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Nombre de usuario:</label>
-						<input id="username-input" type="text" class="form-control" placeholder="Nombre de usario" required>
+						<input name="username-input" type="text" class="form-control" placeholder="Nombre de usario" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Contraseña:</label>
-						<input id="passwd-input" type="password" class="form-control" placeholder="Contraseña" required>
+						<input name="passwd-input" type="password" class="form-control" placeholder="Contraseña" required>
 						<div class="invalid-feedback">
 							Por favor, ingrese información válida.
 						</div>
 					</div>
-					<div class="form-group col-md-6">	
+					<div class="form-group col-md-6">
 						<label>Confirmar contraseña:</label>
-						<input id="ckPasswd-input" type="password" class="form-control" onchange="checkPasswordMatch();" placeholder="Confirme la contraseña" required>
+						<input name="ckPasswd-input" type="password" class="form-control" placeholder="Confirme la contraseña" required>
 						<div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
 					</div>
 				</div>
 				<div class="form-row">
 					<label>Imagen: </label>
 					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="customFile" accept="image/*" required="">
+						<input type="file" class="custom-file-input" name="customFile" accept="image/*" required="">
 						<div class="invalid-feedback">
 							Por favor, ingrese una imagen.
 						</div>
@@ -147,7 +156,7 @@
 		</div>
 
 
-		
+
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>

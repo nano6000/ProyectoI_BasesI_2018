@@ -3,7 +3,9 @@
 	appName -> nombre de la app
 
 -->
-
+<?php
+include_once('scripts/conexion.inc');
+?>
 
 <!DOCTYPE html>
 <html>
@@ -48,49 +50,36 @@
 						</button>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUserMenu">
 							<a class="dropdown-item" href="#">Editar</a>
-							<a class="dropdown-item" href="home.html">Salir</a>	
+							<a class="dropdown-item" href="home.html">Salir</a>
 						</div>
 					</div>
 				</form>
 			</nav>
 		</header>
 
-		
+
 		<div class="row justify-content-center">
 			<div class="card col-lg-8 col-10 text-center" style="margin: 2% 0">
-				<ul class="list-group list-group-flush">					
-					<li class="list-group-item"><b>Ubicación de Huertas</b></li>
-					<li class="list-group-item">
-						<div id="map" style="margin: 5px 0 10px 0 ; width:100%;height:300px;background:gray"></div>
-					</li>
-				</ul>
+				<div class="form-group col-md-6">
+				   <select class="form-control">
+					   <option>Seleccione una huerta</option>
+					   <?php
+
+					   $matriz = oci_parse($conn, "select * from ".$usuario.".huerta");
+					   oci_execute($matriz);
+					   while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
+					   {
+							echo "<option>" . $fila[1] . "</option>";
+					   }
+					   ?>
+					</select>
+				</div>
 			</div>
 		</div>
 
 
-		<script type="text/javascript">
-			function myMap() {
-			var mapOptions = {
-			    center: new google.maps.LatLng(9.94, -84.08),
-			    zoom: 11,
-			    mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-			var coord = [{lat: 9.99, lng: -84.22},{lat: 9.88, lng: -84.15},{lat: 9.93, lng: -84.03}];
 
-			coord.forEach(function(value) 
-			{
-				var marker = new google.maps.Marker(
-				{
-					position: value,
-					map: map
-				});
-			}
-		)}
-		</script>
-
-		
 
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY9EYO8XqsZKsrXZslRF3IF2M5XDcDYZk&callback=myMap"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
