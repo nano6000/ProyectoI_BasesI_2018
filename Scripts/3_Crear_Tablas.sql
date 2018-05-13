@@ -34,32 +34,7 @@ drop table tipoxilema cascade constraints;
 drop table transaccion cascade constraints;
 drop table usuario cascade constraints;
 drop table vitamina cascade constraints;
-drop table vitaminacolor cascade constraints;
-drop sequence seq_abono;
-drop sequence seq_calificacionhuerta;
-drop sequence seq_cambioclave;
-drop sequence seq_cambium;
-drop sequence seq_canton;
-drop sequence seq_clase;
-drop sequence seq_colaborador;
-drop sequence seq_color;
-drop sequence seq_corteza;
-drop sequence seq_distrito;
-drop sequence seq_division;
-drop sequence seq_especie;
-drop sequence seq_familia;
-drop sequence seq_genero;
-drop sequence seq_huerta;
-drop sequence seq_localizacion;
-drop sequence seq_orden;
-drop sequence seq_planta;
-drop sequence seq_propiedad;
-drop sequence seq_provincia;
-drop sequence seq_tipohortaliza;
-drop sequence seq_tipousuario;
-drop sequence seq_transaccion;
-drop sequence seq_vitamina;
-drop sequence seq_xilema;*/
+drop table vitaminacolor cascade constraints;*/
 
 /*---------------------------------------------------
                      Tabla Abono
@@ -175,14 +150,22 @@ CREATE TABLE cambioclave (
     fechahora    DATE NOT NULL,
     clavevieja   VARCHAR2(15 CHAR) NOT NULL,
     clavenueva   VARCHAR2(15 CHAR) NOT NULL,
-    username     NVARCHAR2(15) NOT NULL
+    username     NVARCHAR2(15) NOT NULL,
+    fec_creacion                  DATE,
+    usuario_creacion              VARCHAR2(10),
+    fec_ultima_modificacion       DATE,
+    usuario_ultima_modificacion   VARCHAR2(10)
 );
 
 comment on column cambioclave.codigo is 'Identificador único del cambio de clave';
 comment on column cambioclave.fechahora is 'Fecha en la que se hizo el cambio de clave';
 comment on column cambioclave.clavevieja is 'Clave anterior';
 comment on column cambioclave.clavenueva is 'Clave despues del cambio';
-comment on column cambioclave.username is 'Usuario que hizo el cambio de clave';
+comment on column cambioclave.username is 'Usuario al que hizo el cambio de clave';
+comment on column cambioclave.fec_creacion is 'Fecha original del primer cambio de clave';
+comment on column cambioclave.usuario_creacion is 'Usuario que hizo El cambio de clave';
+comment on column cambioclave.fec_ultima_modificacion is 'Fecha de la ultima modificacion a la clave';
+comment on column cambioclave.usuario_ultima_modificacion is 'Usuario que lo modifico por ultima vez';
 
 comment on table cambioclave is 'Todos los cambios de clave hechos por los usuarios';
 
@@ -1072,6 +1055,10 @@ CREATE TABLE usuario (
     estado        NVARCHAR2(7) NOT NULL,
     tipousuario   NUMBER NOT NULL,
     cedula        NUMBER(9) NOT NULL
+    fec_creacion                  DATE,
+    usuario_creacion              VARCHAR2(10),
+    fec_ultima_modificacion       DATE,
+    usuario_ultima_modificacion   VARCHAR2(10)
 );
 
 comment on column usuario.username is 'Identificador único del usuario';
@@ -1079,6 +1066,10 @@ comment on column usuario.password is 'Contraseña actual del usuario';
 comment on column usuario.estado is 'marca el estado del usuario, si esta en linea o no';
 comment on column usuario.tipousuario is 'Llave foranea que relaciona un usuario con un tipo';
 comment on column usuario.cedula is 'Llave foranea que relaciona un usuario con una persona';
+comment on column usuario.fec_creacion is 'Fecha original de la creacion del usuario';
+comment on column usuario.usuario_creacion is 'Usuario original que lo creo';
+comment on column usuario.fec_ultima_modificacion is 'Fecha de la ultima modificacion del usuario';
+comment on column usuario.usuario_ultima_modificacion is 'Usuario que lo modifico por ultima vez';
 
 comment on table usuario is 'Los usuarios de las huertas';
 
