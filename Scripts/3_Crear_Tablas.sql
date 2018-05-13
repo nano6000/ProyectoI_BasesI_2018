@@ -1054,7 +1054,7 @@ CREATE TABLE usuario (
     password      NVARCHAR2(15) NOT NULL,
     estado        NVARCHAR2(7) NOT NULL,
     tipousuario   NUMBER NOT NULL,
-    cedula        NUMBER(9) NOT NULL
+    cedula        NUMBER(9) NOT NULL,
     fec_creacion                  DATE,
     usuario_creacion              VARCHAR2(10),
     fec_ultima_modificacion       DATE,
