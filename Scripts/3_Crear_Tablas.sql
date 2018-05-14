@@ -67,7 +67,7 @@ ALTER TABLE abono ADD CONSTRAINT pk_abono PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Arbol
 ---------------------------------------------------*/
@@ -83,9 +83,9 @@ CREATE TABLE arbol (
     fec_ultima_modificacion       DATE,
     usuario_ultima_modificacion   VARCHAR2(10)
 );
-comment on column arbol.codigoplanta is 'Llave foranea que relaciona el arbol con una planta, ademas 
+comment on column arbol.codigoplanta is 'Llave foranea que relaciona el arbol con una planta, ademas
                                         es el identificador unico del arbol';
-comment on column arbol.peligroextincion is 'Marca si está o no en peligro de extincion';
+comment on column arbol.peligroextincion is 'Marca si estï¿½ o no en peligro de extincion';
 comment on column arbol.especie is 'Llave foranea que relaciona el arbol con una especie';
 comment on column arbol.corteza is 'Llave foranea que relaciona el arbol con su tipo de corteza';
 comment on column arbol.xilema is 'Llave foranea que relaciona el arbol con su tipo de xilema';
@@ -103,7 +103,7 @@ ALTER TABLE arbol ADD CONSTRAINT pk_arbol PRIMARY KEY ( codigoplanta )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                Tabla CalificacionHuerta
 ---------------------------------------------------*/
@@ -141,15 +141,15 @@ ALTER TABLE calificacionhuerta ADD CONSTRAINT pk_calificacionhuerta PRIMARY KEY 
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                     Tabla CambioClave
 ---------------------------------------------------*/
 CREATE TABLE cambioclave (
     codigo       NUMBER NOT NULL,
     fechahora    DATE NOT NULL,
-    clavevieja   VARCHAR2(15 CHAR) NOT NULL,
-    clavenueva   VARCHAR2(15 CHAR) NOT NULL,
+    clavevieja   VARCHAR2(255 CHAR) NOT NULL,
+    clavenueva   VARCHAR2(255 CHAR) NOT NULL,
     username     NVARCHAR2(15) NOT NULL,
     fec_creacion                  DATE,
     usuario_creacion              VARCHAR2(10),
@@ -157,7 +157,7 @@ CREATE TABLE cambioclave (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column cambioclave.codigo is 'Identificador único del cambio de clave';
+comment on column cambioclave.codigo is 'Identificador ï¿½nico del cambio de clave';
 comment on column cambioclave.fechahora is 'Fecha en la que se hizo el cambio de clave';
 comment on column cambioclave.clavevieja is 'Clave anterior';
 comment on column cambioclave.clavenueva is 'Clave despues del cambio';
@@ -173,7 +173,7 @@ ALTER TABLE cambioclave ADD CONSTRAINT pk_cambioclave PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Canton
 ---------------------------------------------------*/
@@ -187,7 +187,7 @@ CREATE TABLE canton (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column canton.codigo is 'Identificador único del canton';
+comment on column canton.codigo is 'Identificador ï¿½nico del canton';
 comment on column canton.nombre is 'El nombre del canton';
 comment on column canton.provincia is 'Llave foranea que relaciona el canton con una provincia';
 comment on column canton.fec_creacion is 'Fecha original de la creacion del canton';
@@ -201,7 +201,7 @@ ALTER TABLE canton ADD CONSTRAINT pk_canton PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                       Tabla Clase
 ---------------------------------------------------*/
@@ -215,7 +215,7 @@ CREATE TABLE clase (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column clase.codigoclase is 'Identificador único de la clase de un orden';
+comment on column clase.codigoclase is 'Identificador ï¿½nico de la clase de un orden';
 comment on column clase.nombre is 'El nombre de la clase';
 comment on column clase.division is 'Llave foranea que relaciona la clase con una division';
 comment on column clase.fec_creacion is 'Fecha original de la creacion de la clase';
@@ -231,7 +231,7 @@ ALTER TABLE clase ADD CONSTRAINT pk_clase PRIMARY KEY ( codigoclase )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                   Tabla Colaborador
 ---------------------------------------------------*/
@@ -246,8 +246,8 @@ CREATE TABLE colaborador (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column colaborador.codigocolaborador is 'Identificador único de un colaborador';
-comment on column colaborador.activo is 'Marca si el colaborador está activo o no';
+comment on column colaborador.codigocolaborador is 'Identificador ï¿½nico de un colaborador';
+comment on column colaborador.activo is 'Marca si el colaborador estï¿½ activo o no';
 comment on column colaborador.encargado is 'Llave foranea que relaciona a un colaborador con un encargado';
 comment on column colaborador.persona_cedula is 'Llave foranea que relaciona al colaborador con una persona';
 comment on column colaborador.fec_creacion is 'Fecha original de la creacion del colaborador';
@@ -263,7 +263,7 @@ ALTER TABLE colaborador ADD CONSTRAINT pk_colaborador PRIMARY KEY ( codigocolabo
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                 Tabla ColaboradorHuerta
 ---------------------------------------------------*/
@@ -289,10 +289,10 @@ ALTER TABLE colaboradorhuerta ADD CONSTRAINT pk_colaboradorhuerta PRIMARY KEY (h
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Color
----------------------------------------------------*/    
+---------------------------------------------------*/
 CREATE TABLE color (
     codigocolor                   NUMBER NOT NULL,
     nombre                        NVARCHAR2(10) NOT NULL,
@@ -322,7 +322,7 @@ ALTER TABLE color ADD CONSTRAINT pk_colorhortaliza PRIMARY KEY ( codigocolor )
 
 /*---------------------------------------------------
                       Tabla Distrito
----------------------------------------------------*/   
+---------------------------------------------------*/
 CREATE TABLE distrito (
     codigo                        NUMBER NOT NULL,
     nombre                        NVARCHAR2(20) NOT NULL,
@@ -333,7 +333,7 @@ CREATE TABLE distrito (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column distrito.codigo is 'Identificador único del distrito';
+comment on column distrito.codigo is 'Identificador ï¿½nico del distrito';
 comment on column distrito.nombre is 'El nombre del distrito';
 comment on column distrito.canton is 'Llave foranea que relaciona al distrito con un canton';
 comment on column distrito.fec_creacion is 'Fecha original de la creacion del distrito';
@@ -347,10 +347,10 @@ ALTER TABLE distrito ADD CONSTRAINT pk_distrito PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Division
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE division (
     codigodivision                NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -360,7 +360,7 @@ CREATE TABLE division (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column division.codigodivision is 'Identificador único de la division';
+comment on column division.codigodivision is 'Identificador ï¿½nico de la division';
 comment on column division.nombre is 'El nombre de la division';
 comment on column division.fec_creacion is 'Fecha original de la creacion de la division';
 comment on column division.usuario_creacion is 'Usuario original que lo creo';
@@ -378,7 +378,7 @@ ALTER TABLE division ADD CONSTRAINT pk_division PRIMARY KEY ( codigodivision )
 
 /*---------------------------------------------------
                    Tabla EmailPersona
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE emailpersona (
     email                         NVARCHAR2(20) NOT NULL,
     cedula                        NUMBER(9) NOT NULL,
@@ -389,7 +389,7 @@ CREATE TABLE emailpersona (
 );
 
 comment on column emailpersona.email is 'Identificador de los emails de las personas';
-comment on column emailpersona.cedula is 'Llave foranea que relaciona el email con una persona y un identificador de los 
+comment on column emailpersona.cedula is 'Llave foranea que relaciona el email con una persona y un identificador de los
                                           emails de las personas';
 comment on column emailpersona.fec_creacion is 'Fecha original de la creacion del email';
 comment on column emailpersona.usuario_creacion is 'Usuario original que lo creo';
@@ -402,10 +402,10 @@ ALTER TABLE emailpersona ADD CONSTRAINT pk_emailpersona PRIMARY KEY ( email, ced
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Especie
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE especie (
     codigoespecie                 NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -435,7 +435,7 @@ ALTER TABLE especie ADD CONSTRAINT pk_especie PRIMARY KEY ( codigoespecie )
 
 /*---------------------------------------------------
                     Tabla Familia
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE familia (
     codigofamilia                 NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -465,7 +465,7 @@ ALTER TABLE familia ADD CONSTRAINT pk_familia PRIMARY KEY ( codigofamilia )
 
 /*---------------------------------------------------
                      Tabla Genero
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE genero (
     codigogenero                  NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -495,7 +495,7 @@ ALTER TABLE genero ADD CONSTRAINT pk_genero PRIMARY KEY ( codigogenero )
 
 /*---------------------------------------------------
                    Tabla Hortaliza
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE hortaliza (
     codigoplanta                  NUMBER NOT NULL,
     codigotipo                    NUMBER NOT NULL,
@@ -506,7 +506,7 @@ CREATE TABLE hortaliza (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column hortaliza.codigoplanta is 'Llave foranea que relaciona la hortaliza con una planta, ademas 
+comment on column hortaliza.codigoplanta is 'Llave foranea que relaciona la hortaliza con una planta, ademas
                                         es el identificador unico de una hortaliza';
 comment on column hortaliza.codigotipo is 'Llave foranea que relaciona la hortaliza con un tipo';
 comment on column hortaliza.codigocolor is 'Llave foranea que relaciona la hortaliza con un color';
@@ -521,10 +521,10 @@ ALTER TABLE hortaliza ADD CONSTRAINT pk_hortaliza PRIMARY KEY ( codigoplanta )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla HuertaA
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE huertaA (
     codigohuerta                  NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -539,7 +539,7 @@ CREATE TABLE huertaA (
 
 comment on column huertaA.codigohuerta is 'Identificador unico de una huerta';
 comment on column huertaA.nombre is 'Nombre de una huerta';
-comment on column huertaA.activo is 'Marca si una huerta está o no aciva';
+comment on column huertaA.activo is 'Marca si una huerta estï¿½ o no aciva';
 comment on column huertaA.ubicacion is 'Llave foranea que relaciona la huerta con un distrito';
 comment on column huertaA.localizacion is 'Llave foranea que relaciona la huerta con una localizacion';
 comment on column huertaA.fec_creacion is 'Fecha original de la creacion de la huerta';
@@ -560,7 +560,7 @@ ALTER TABLE huertaA ADD CONSTRAINT pk_huerta PRIMARY KEY ( codigohuerta )
 
 /*---------------------------------------------------
                   Tabla Localizacion
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE localizacion (
     codigo                        NUMBER NOT NULL,
     xcoord                        NUMBER(8,6),
@@ -590,7 +590,7 @@ ALTER TABLE localizacion ADD CONSTRAINT pk_localizacion PRIMARY KEY ( codigo )
 
 /*---------------------------------------------------
                          Tabla Orden
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE orden (
     codigoorden                   NUMBER NOT NULL,
     nombre                        NVARCHAR2(15) NOT NULL,
@@ -617,10 +617,10 @@ ALTER TABLE orden ADD CONSTRAINT pk_orden PRIMARY KEY ( codigoorden )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                       Tabla Pais
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE pais (
     codigo                        NVARCHAR2(3) NOT NULL,
     nombre                        NVARCHAR2(10) NOT NULL,
@@ -630,7 +630,7 @@ CREATE TABLE pais (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column pais.codigo is 'Identificador único del pais';
+comment on column pais.codigo is 'Identificador ï¿½nico del pais';
 comment on column pais.nombre is 'El nombre del pais';
 comment on column pais.fec_creacion is 'Fecha original de la creacion del pais';
 comment on column pais.usuario_creacion is 'Usuario original que lo creo';
@@ -643,10 +643,10 @@ ALTER TABLE pais ADD CONSTRAINT pk_pais PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                     Tabla Persona
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE persona (
     cedula                        NUMBER(9) NOT NULL,
     primernombre                  NVARCHAR2(10) NOT NULL,
@@ -662,7 +662,7 @@ CREATE TABLE persona (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column persona.cedula is 'Identificador único de una persona';
+comment on column persona.cedula is 'Identificador ï¿½nico de una persona';
 comment on column persona.primernombre is 'El primer nombre de una persona';
 comment on column persona.segundonombre is 'El segundo nombre de una persona';
 comment on column persona.primerapellido is 'El primer apellido de una persona';
@@ -681,10 +681,10 @@ ALTER TABLE persona ADD CONSTRAINT pk_persona PRIMARY KEY ( cedula )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                     Tabla Planta
----------------------------------------------------*/  
+---------------------------------------------------*/
 CREATE TABLE planta (
     codigoplanta                  NUMBER NOT NULL,
     nombre                        VARCHAR2(15 CHAR) NOT NULL,
@@ -696,7 +696,7 @@ CREATE TABLE planta (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column planta.codigoplanta is 'Identificador único de una planta';
+comment on column planta.codigoplanta is 'Identificador ï¿½nico de una planta';
 comment on column planta.nombre is 'El nombre de una planta';
 comment on column planta.activo is 'Marca si la planta esta activa en alguna huerta';
 comment on column planta.imagen is 'Una imagen de la planta';
@@ -711,10 +711,10 @@ ALTER TABLE planta ADD CONSTRAINT pk_planta PRIMARY KEY ( codigoplanta )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                   Tabla PlantaHuerta
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE plantahuerta (
     precio                        NUMBER(12,2) DEFAULT 0 NOT NULL,
     planta                        NUMBER NOT NULL,
@@ -726,9 +726,9 @@ CREATE TABLE plantahuerta (
 );
 
 comment on column plantahuerta.precio is 'Precio de una planta en cierta huerta';
-comment on column plantahuerta.planta is 'Llave foranea que relaciona una planta con una huerta, tambien funciona 
+comment on column plantahuerta.planta is 'Llave foranea que relaciona una planta con una huerta, tambien funciona
                                           como identificador unico';
-comment on column plantahuerta.huerta is 'Llave foranea que relaciona una huerta con una planta, tambien funciona 
+comment on column plantahuerta.huerta is 'Llave foranea que relaciona una huerta con una planta, tambien funciona
                                           como identificador unico';
 comment on column plantahuerta.fec_creacion is 'Fecha original de la creacion de la planta en cierta huerta';
 comment on column plantahuerta.usuario_creacion is 'Usuario original que lo creo';
@@ -744,10 +744,10 @@ huerta )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla Propiedad
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE propiedad (
     codigopropiedad               NUMBER NOT NULL,
     descripcion                   NVARCHAR2(20) NOT NULL,
@@ -757,7 +757,7 @@ CREATE TABLE propiedad (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column propiedad.codigopropiedad is 'Identificador único de una propiedad';
+comment on column propiedad.codigopropiedad is 'Identificador ï¿½nico de una propiedad';
 comment on column propiedad.descripcion is 'El nombre de la propiedad';
 comment on column propiedad.fec_creacion is 'Fecha original de la creacion de la propiedad';
 comment on column propiedad.usuario_creacion is 'Usuario original que lo creo';
@@ -770,10 +770,10 @@ ALTER TABLE propiedad ADD CONSTRAINT pk_propiedad PRIMARY KEY ( codigopropiedad 
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                Tabla PropiedadHortaliza
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE propiedadhortaliza (
     codigopropiedad               NUMBER NOT NULL,
     codigoplanta                  NUMBER NOT NULL,
@@ -783,10 +783,10 @@ CREATE TABLE propiedadhortaliza (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column propiedadhortaliza.codigopropiedad is 'Llave foranea que relaciona una propiedad con una planta, 
-                                                         además identificador único de una propiedad';
-comment on column propiedadhortaliza.codigoplanta is 'Llave foranea que relaciona una planta con una propiedad, 
-                                                      además identificador único de una propiedad';
+comment on column propiedadhortaliza.codigopropiedad is 'Llave foranea que relaciona una propiedad con una planta,
+                                                         ademï¿½s identificador ï¿½nico de una propiedad';
+comment on column propiedadhortaliza.codigoplanta is 'Llave foranea que relaciona una planta con una propiedad,
+                                                      ademï¿½s identificador ï¿½nico de una propiedad';
 comment on column propiedadhortaliza.fec_creacion is 'Fecha original de la creacion de la propiedad de la planta';
 comment on column propiedadhortaliza.usuario_creacion is 'Usuario original que lo creo';
 comment on column propiedadhortaliza.fec_ultima_modificacion is 'Fecha de la ultima modificacion de la propiedad de la planta';
@@ -799,10 +799,10 @@ codigoplanta )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                      Tabla Provincia
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE provincia (
     codigo                        NUMBER NOT NULL,
     nombre                        NVARCHAR2(20) NOT NULL,
@@ -813,9 +813,9 @@ CREATE TABLE provincia (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column provincia.codigo is 'Identificador único de la provincia';
+comment on column provincia.codigo is 'Identificador ï¿½nico de la provincia';
 comment on column provincia.nombre is 'El nombre de la provincia';
-comment on column provincia.pais is 'Llave foranea que relaciona la provincia con un país';
+comment on column provincia.pais is 'Llave foranea que relaciona la provincia con un paï¿½s';
 comment on column provincia.fec_creacion is 'Fecha original de la creacion de la provincia';
 comment on column provincia.usuario_creacion is 'Usuario original que lo creo';
 comment on column provincia.fec_ultima_modificacion is 'Fecha de la ultima modificacion de la provincia';
@@ -827,10 +827,10 @@ ALTER TABLE provincia ADD CONSTRAINT pk_provincia PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                  Tabla TelefonoPersona
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE telefonopersona (
     telefono                      NVARCHAR2(20) NOT NULL,
     cedula                        NUMBER(9) NOT NULL,
@@ -840,10 +840,10 @@ CREATE TABLE telefonopersona (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column telefonopersona.telefono is 'Llave foranea que relaciona una telefono con una persona, 
-                                               además identificador único de un telefono';
-comment on column telefonopersona.cedula is 'Llave foranea que relaciona una persona con una telefono, 
-                                             además identificador único de una telefono';
+comment on column telefonopersona.telefono is 'Llave foranea que relaciona una telefono con una persona,
+                                               ademï¿½s identificador ï¿½nico de un telefono';
+comment on column telefonopersona.cedula is 'Llave foranea que relaciona una persona con una telefono,
+                                             ademï¿½s identificador ï¿½nico de una telefono';
 comment on column telefonopersona.fec_creacion is 'Fecha original de la creacion de un telefono de una persona';
 comment on column telefonopersona.usuario_creacion is 'Usuario original que lo creo';
 comment on column telefonopersona.fec_ultima_modificacion is 'Fecha de la ultima modificacion de un telefono de una persona';
@@ -856,10 +856,10 @@ cedula)
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla TipoCambium
----------------------------------------------------*/ 
+---------------------------------------------------*/
 CREATE TABLE tipocambium (
     codigocambium                 NUMBER NOT NULL,
     descripcion                   NVARCHAR2(20) NOT NULL,
@@ -869,7 +869,7 @@ CREATE TABLE tipocambium (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column tipocambium.codigocambium is 'Identificador único de un tipo de cambium';
+comment on column tipocambium.codigocambium is 'Identificador ï¿½nico de un tipo de cambium';
 comment on column tipocambium.descripcion is 'Descripcion de un tipo de cambium';
 comment on column tipocambium.fec_creacion is 'Fecha original de la creacion de un cambium';
 comment on column tipocambium.usuario_creacion is 'Usuario original que lo creo';
@@ -882,7 +882,7 @@ ALTER TABLE tipocambium ADD CONSTRAINT pk_tipocambium PRIMARY KEY ( codigocambiu
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                   Tabla TipoCorteza
 ---------------------------------------------------*/
@@ -895,7 +895,7 @@ CREATE TABLE tipocorteza (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column tipocorteza.codigocorteza is 'Identificador único de un tipo de corteza';
+comment on column tipocorteza.codigocorteza is 'Identificador ï¿½nico de un tipo de corteza';
 comment on column tipocorteza.descripcion is 'Descripcion de un tipo de corteza';
 comment on column tipocorteza.fec_creacion is 'Fecha original de la creacion de un tipo de corteza';
 comment on column tipocorteza.usuario_creacion is 'Usuario original que lo creo';
@@ -908,7 +908,7 @@ ALTER TABLE tipocorteza ADD CONSTRAINT pk_tipocorteza PRIMARY KEY ( codigocortez
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                   Tabla TipoHortaliza
 ---------------------------------------------------*/
@@ -921,7 +921,7 @@ CREATE TABLE tipohortaliza (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column tipohortaliza.codigotipo is 'Identificador único de un tipo de hortaliza';
+comment on column tipohortaliza.codigotipo is 'Identificador ï¿½nico de un tipo de hortaliza';
 comment on column tipohortaliza.descripcion is 'Descripcion de un tipo de hortaliza';
 comment on column tipohortaliza.fec_creacion is 'Fecha original de la creacion de un tipo de hortaliza';
 comment on column tipohortaliza.usuario_creacion is 'Usuario original que lo creo';
@@ -934,7 +934,7 @@ ALTER TABLE tipohortaliza ADD CONSTRAINT pk_tipohortaliza PRIMARY KEY ( codigoti
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                  Tabla PlantaTrueque
 ---------------------------------------------------*/
@@ -947,8 +947,8 @@ CREATE TABLE plantatrueque (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column plantatrueque.codigotransaccion is 'Llave foranea que relaciona a la entidad con una transaccion. Ademas es 
-                                                     identificador único de plantatrueque';
+comment on column plantatrueque.codigotransaccion is 'Llave foranea que relaciona a la entidad con una transaccion. Ademas es
+                                                     identificador ï¿½nico de plantatrueque';
 comment on column plantatrueque.planta is 'Llave foranea que relaciona una transaccion con una planta';
 comment on column plantatrueque.fec_creacion is 'Fecha original de la creacion del trueque';
 comment on column plantatrueque.usuario_creacion is 'Usuario original que lo creo';
@@ -974,7 +974,7 @@ CREATE TABLE tipousuario (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column tipousuario.codigo is 'Identificador único de un tipo de usuario';
+comment on column tipousuario.codigo is 'Identificador ï¿½nico de un tipo de usuario';
 comment on column tipousuario.tipo is 'Nombre de un tipo de usuario';
 comment on column tipousuario.fec_creacion is 'Fecha original de la creacion de un tipo de usuario';
 comment on column tipousuario.usuario_creacion is 'Usuario original que lo creo';
@@ -987,7 +987,7 @@ ALTER TABLE tipousuario ADD CONSTRAINT pk_tipousuario PRIMARY KEY ( codigo )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla TipoXilema
 ---------------------------------------------------*/
@@ -1000,7 +1000,7 @@ CREATE TABLE tipoxilema (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column tipoxilema.codigoxilema is 'Identificador único de un tipo de xilema';
+comment on column tipoxilema.codigoxilema is 'Identificador ï¿½nico de un tipo de xilema';
 comment on column tipoxilema.descripcion is 'Nombre de un tipo de xilema';
 comment on column tipoxilema.fec_creacion is 'Fecha original de la creacion de un tipo de xilema';
 comment on column tipoxilema.usuario_creacion is 'Usuario original que lo creo';
@@ -1013,7 +1013,7 @@ ALTER TABLE tipoxilema ADD CONSTRAINT pk_tipoxilema PRIMARY KEY ( codigoxilema )
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla Transaccion
 ---------------------------------------------------*/
@@ -1029,7 +1029,7 @@ CREATE TABLE transaccion (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column transaccion.codigotransaccion is 'Identificador único de una transaccion';
+comment on column transaccion.codigotransaccion is 'Identificador ï¿½nico de una transaccion';
 comment on column transaccion.fechahora is 'Fecha y hora de un transaccion';
 comment on column transaccion.huerta is 'Llave foranea que relaciona una transaccion con una huerta';
 comment on column transaccion.planta is 'Llave foranea que relaciona una transaccion con una planta';
@@ -1045,13 +1045,13 @@ ALTER TABLE transaccion ADD CONSTRAINT pk_transaccion PRIMARY KEY ( codigotransa
     using index
     tablespace huerta_ind PCTFREE 20
     storage (INITIAL 10K NEXT 10K PCTINCREASE 0);
-    
+
 /*---------------------------------------------------
                    Tabla Usuario
 ---------------------------------------------------*/
 CREATE TABLE usuario (
     username      NVARCHAR2(15) NOT NULL,
-    password      NVARCHAR2(15) NOT NULL,
+    password      NVARCHAR2(255) NOT NULL,
     estado        NVARCHAR2(7) NOT NULL,
     tipousuario   NUMBER NOT NULL,
     cedula        NUMBER(9) NOT NULL,
@@ -1061,8 +1061,8 @@ CREATE TABLE usuario (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column usuario.username is 'Identificador único del usuario';
-comment on column usuario.password is 'Contraseña actual del usuario';
+comment on column usuario.username is 'Identificador ï¿½nico del usuario';
+comment on column usuario.password is 'Contraseï¿½a actual del usuario';
 comment on column usuario.estado is 'marca el estado del usuario, si esta en linea o no';
 comment on column usuario.tipousuario is 'Llave foranea que relaciona un usuario con un tipo';
 comment on column usuario.cedula is 'Llave foranea que relaciona un usuario con una persona';
@@ -1094,7 +1094,7 @@ CREATE TABLE vitamina (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column vitamina.codigovitamina is 'Identificador único de una vitamina';
+comment on column vitamina.codigovitamina is 'Identificador ï¿½nico de una vitamina';
 comment on column vitamina.nombre is 'Nombre de una vitamina';
 comment on column vitamina.fec_creacion is 'Fecha original de la creacion de una vitamina';
 comment on column vitamina.usuario_creacion is 'Usuario original que lo creo';
@@ -1122,10 +1122,10 @@ CREATE TABLE vitaminacolor (
     usuario_ultima_modificacion   VARCHAR2(10)
 );
 
-comment on column vitaminacolor.codigovitamina is 'Llave foranea que relaciona una vitamina con un color, ademas es 
-                                              identificador único de una vitamina';
-comment on column vitaminacolor.codigocolor is 'Llave foranea que relaciona un color con una vitamina, ademas es 
-                                              identificador único de una vitamina';
+comment on column vitaminacolor.codigovitamina is 'Llave foranea que relaciona una vitamina con un color, ademas es
+                                              identificador ï¿½nico de una vitamina';
+comment on column vitaminacolor.codigocolor is 'Llave foranea que relaciona un color con una vitamina, ademas es
+                                              identificador ï¿½nico de una vitamina';
 comment on column vitaminacolor.fec_creacion is 'Fecha original de la creacion del color de la vitamina';
 comment on column vitaminacolor.usuario_creacion is 'Usuario original que lo creo';
 comment on column vitaminacolor.fec_ultima_modificacion is 'Fecha de la ultima modificacion del color de la vitamina';

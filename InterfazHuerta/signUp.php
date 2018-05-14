@@ -12,9 +12,9 @@ include_once('scripts/conexion.inc');
 	<body>
 
 		<header class="sticky-top">
-			<nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
-				<a class="navbar-brand" href="home.html">
-					appName
+			<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #168016;">
+				<a class="navbar-brand" href="home.php">
+					EcoHuertas
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@ include_once('scripts/conexion.inc');
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				</div>
 				<form class="form-inline">
-					<button class="btn my-2 my-sm-0 btn-secondary" type="button">Login</button>
+					<button class="btn my-2 my-sm-0 btn-secondary"  onclick="location.href='login.php'" type="button">Login</button>
 				</form>
 			</nav>
 		</header>
@@ -99,20 +99,19 @@ include_once('scripts/conexion.inc');
 					<div class="form-group col-md-6">
 						<label>Nacionalidad:</label>
 						<select name="citizenship" name="citizenship" class="custom-select" required>
-							<option>Seleccione una opcion</option>
 							<?php
 								if (isset($_GET['pais']))
 									$pais = $_GET['pais'];
 								else
 									$pais = "";
-								$matriz = oci_parse($conn, "select * from ".$usuario.".Pais");
+								$matriz = oci_parse($conn, "select * from huerta.pais");
 								oci_execute($matriz);
 								while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
 								{
 									if ($fila[0] == $pais)
-										echo "<option value=\"$fila[0]\" selected>" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
+										echo "<option value='" . $fila[0] . "' selected>" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
 									else
-										echo "<option value=\"$fila[0]\">" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
+										echo "<option value='" . $fila[0] . "'>" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
 								}
 							?>
 						</select>
@@ -275,7 +274,7 @@ include_once('scripts/conexion.inc');
 					<button id="btnSignIn" class="btn my-2 my-sm-0 btn-dark" style="margin: 0 1%" form="myform" type="submit" name="submit">
 						Sign Up
 					</button>
-					<button class="btn my-2 my-sm-0 btn-dark" style="margin: 0 1%" type="button" onclick="location.href='home.html'">Cancelar</button>
+					<button class="btn my-2 my-sm-0 btn-dark" style="margin: 0 1%" type="button" onclick="location.href='home.php'">Cancelar</button>
 				</div>
 			</form>
 		</div>

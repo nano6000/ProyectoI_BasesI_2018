@@ -1,8 +1,14 @@
 <!--
 
-	appName -> nombre de la app
+	EcoHuertas -> nombre de la app
 
 -->
+<?php
+ 	session_start();
+
+	if (isset($_SESSION['username']))
+		header("Location: homeUser.php");
+?>
 
 
 <!DOCTYPE html>
@@ -15,9 +21,9 @@
 	<body>
 
 		<header class="sticky-top">
-			<nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
-				<a class="navbar-brand" href="home.html">
-					appName
+			<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #168016;">
+				<a class="navbar-brand" href="home.php">
+					EcoHuertas
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -31,15 +37,15 @@
 					</ul>
 				</div>
 				<form class="form-inline">
-					<button class="btn my-2 my-sm-0 btn-secondary" onclick="location.href='login.html'" type="button">Login</button>
+					<button class="btn my-2 my-sm-0 btn-secondary" onclick="location.href='login.php'" type="button">Login</button>
 				</form>
 			</nav>
 		</header>
 
-		
+
 		<div class="row justify-content-center">
 			<div class="card col-lg-8 col-10 text-center" style="margin: 2% 0">
-				<ul class="list-group list-group-flush">					
+				<ul class="list-group list-group-flush">
 					<li class="list-group-item"><b>Ubicación de Huertas</b></li>
 					<li class="list-group-item">
 						<div id="map" style="margin: 5px 0 10px 0 ; width:100%;height:300px;background:gray"></div>
@@ -48,7 +54,7 @@
 			</div>
 		</div>
 
-		
+
 
 		<script>
 			function myMap() {
@@ -60,8 +66,8 @@
 				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 				var coord = [{lat: 9.99, lng: -84.22},{lat: 9.88, lng: -84.15},{lat: 9.93, lng: -84.03}];
-  
-				coord.forEach(function(value) 
+
+				coord.forEach(function(value)
 				{
 					var marker = new google.maps.Marker(
 					{

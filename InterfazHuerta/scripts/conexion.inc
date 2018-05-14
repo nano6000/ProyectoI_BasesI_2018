@@ -1,8 +1,8 @@
 <?php
     //parametros de conexion (opcionales)
     $basedatos = "localhost/orcl";
-    $usuario   = "nano";
-    $contra    = "nano";
+    $usuario   = "huerta";
+    $contra    = "huerta";
 
     //suprime advertencias
     error_reporting(0);
