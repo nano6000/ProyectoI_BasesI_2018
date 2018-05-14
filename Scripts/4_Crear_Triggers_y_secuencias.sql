@@ -43,6 +43,7 @@ CREATE OR REPLACE TRIGGER arbol_auditoria BEFORE
     INSERT ON arbol
     FOR EACH ROW
 BEGIN
+    :new.codigoplanta
     :new.fec_creacion := SYSDATE;
     :new.usuario_creacion := USER;
     :new.fec_ultima_modificacion := SYSDATE;
@@ -223,7 +224,6 @@ BEGIN
     :new.usuario_ultima_modificacion := USER;
 END;
 /
-
 CREATE OR REPLACE TRIGGER hortaliza_codigoplanta_trg BEFORE
     INSERT ON hortaliza
     FOR EACH ROW
@@ -276,14 +276,22 @@ BEGIN
     :new.usuario_ultima_modificacion := USER;
 END;
 /
-CREATE SEQUENCE seq_pais START WITH 0 MINVALUE 0 MAXVALUE 999999 NOCACHE ORDER;
+/* DROP = CREATE SEQUENCE seq_pais START WITH 0 MINVALUE 0 MAXVALUE 999999 NOCACHE ORDER;*/
 
 CREATE OR REPLACE TRIGGER pais_codigo_trg BEFORE
     INSERT ON pais
     FOR EACH ROW
-    WHEN ( new.codigo IS NULL )
 BEGIN
-    :new.codigo := seq_pais.nextval;
+    :new.fec_creacion := SYSDATE;
+    :new.usuario_creacion := USER;
+    :new.fec_ultima_modificacion := SYSDATE;
+    :new.usuario_ultima_modificacion := USER;
+END;
+/
+CREATE OR REPLACE TRIGGER persona_trg BEFORE
+    INSERT ON persona
+    FOR EACH ROW
+BEGIN
     :new.fec_creacion := SYSDATE;
     :new.usuario_creacion := USER;
     :new.fec_ultima_modificacion := SYSDATE;
@@ -306,16 +314,6 @@ END;
 /
 CREATE OR REPLACE TRIGGER plantahuerta_auditoria_trg BEFORE
     INSERT ON plantahuerta
-    FOR EACH ROW
-BEGIN
-    :new.fec_creacion := SYSDATE;
-    :new.usuario_creacion := USER;
-    :new.fec_ultima_modificacion := SYSDATE;
-    :new.usuario_ultima_modificacion := USER;
-END;
-/
-CREATE OR REPLACE TRIGGER plantatrueque_auditoria_trg BEFORE
-    INSERT ON plantatrueque
     FOR EACH ROW
 BEGIN
     :new.fec_creacion := SYSDATE;
@@ -414,14 +412,14 @@ BEGIN
     :new.usuario_ultima_modificacion := USER;
 END;
 /
-CREATE SEQUENCE seq_tipousuario START WITH 0 MINVALUE 0 MAXVALUE 999999 NOCACHE ORDER;
+CREATE SEQUENCE seq_tipotransaccion START WITH 0 MINVALUE 0 MAXVALUE 999999 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tipousuario_codigo_trg BEFORE
-    INSERT ON tipousuario
+CREATE OR REPLACE TRIGGER tipotransaccion_codigo_trg BEFORE
+    INSERT ON tipotransaccion
     FOR EACH ROW
-    WHEN ( new.codigo IS NULL )
+    WHEN ( new.codigotipo IS NULL )
 BEGIN
-    :new.codigo := seq_tipousuario.nextval;
+    :new.codigotipo := seq_tipotransaccion.nextval;
     :new.fec_creacion := SYSDATE;
     :new.usuario_creacion := USER;
     :new.fec_ultima_modificacion := SYSDATE;
@@ -456,6 +454,16 @@ BEGIN
     :new.usuario_ultima_modificacion := USER;
 END;
 /
+CREATE OR REPLACE TRIGGER usuario_trg BEFORE
+    INSERT ON usuario
+    FOR EACH ROW
+BEGIN
+	:new.fec_creacion:=SYSDATE;
+    :new.usuario_creacion:=USER;
+	:new.fec_ultima_modificacion:=SYSDATE;
+    :new.usuario_ultima_modificacion:=USER;
+END;
+/
 CREATE SEQUENCE seq_vitamina START WITH 0 MINVALUE 0 MAXVALUE 999999 NOCACHE ORDER;
 
 CREATE OR REPLACE TRIGGER vitamina_codigovitamina_trg BEFORE
@@ -479,3 +487,14 @@ BEGIN
     :new.fec_ultima_modificacion := SYSDATE;
     :new.usuario_ultima_modificacion := USER;
 END;
+/
+CREATE OR REPLACE TRIGGER vitaminacolor_trg BEFORE
+    INSERT ON vitaminacolor
+    FOR EACH ROW
+BEGIN
+	:new.fec_creacion:=SYSDATE;
+    :new.usuario_creacion:=USER;
+	:new.fec_ultima_modificacion:=SYSDATE;
+    :new.usuario_ultima_modificacion:=USER;
+END;
+/
