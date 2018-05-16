@@ -1,6 +1,7 @@
 <?php
 
     include_once 'header.php';
+    include_once 'scripts/conexion.inc';
 
 ?>
 
@@ -21,13 +22,13 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Pais:</label>
-                    <select name="pais" class="custom-select" required>
+                    <select name="pais" class="custom-select" >
                         <?php
-                            $matriz = oci_parse($conn, "BEGIN pck_persona.get_paises(); END;");
+                            $matriz = oci_parse($conn, "select * from huerta.pais");
                             oci_execute($matriz);
                             while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
                             {
-                                echo "<option value=\"$fila[0]\">" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
+                                echo "<option value='" . $fila[0] . "'>" . $fila[1] . " (" . $fila[0] . ")" . "</option>";
                             }
                         ?>
                     </select>
@@ -37,9 +38,9 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label>Provincia:</label>
-                    <select name="provincia" class="custom-select" required>
+                    <select name="provincia" class="custom-select" >
                         <?php
-                            $matriz = oci_parse($conn, "BEGIN pck_persona.get_provincias(); END;");
+                            $matriz = oci_parse($conn, "select * from huerta.provincia");
                             oci_execute($matriz);
                             while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
                             {
@@ -55,9 +56,9 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Canton:</label>
-                    <select name="canton" class="custom-select" required>
+                    <select name="canton" class="custom-select" >
                         <?php
-                            $matriz = oci_parse($conn, "BEGIN pck_persona.get_canton(); END;");
+                            $matriz = oci_parse($conn, "select * from huerta.canton");
                             oci_execute($matriz);
                             while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
                             {
@@ -71,9 +72,9 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label>Distrito:</label>
-                    <select name="district" class="custom-select" required>
+                    <select name="district" class="custom-select" >
                         <?php
-                            $matriz = oci_parse($conn, "BEGIN pck_persona.get_distrito(); END;");
+                            $matriz = oci_parse($conn, "select * from huerta.distrito");
                             oci_execute($matriz);
                             while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
                             {

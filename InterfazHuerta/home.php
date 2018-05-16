@@ -23,6 +23,7 @@
 		<header class="sticky-top">
 			<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #168016;">
 				<a class="navbar-brand" href="home.php">
+                <img src="logo.png" alt="logo" height="50" width="42">
 					EcoHuertas
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +56,10 @@
 		</div>
 
 
+        <?php
+            $puntos = "select * from Localizacion";
+            [x1, y1, x2,y2]
+         ?>
 
 		<script>
 			function myMap() {
@@ -64,8 +69,25 @@
 				    mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
 				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                <?php
+                include_once 'scripts/conexion.inc';
+                $matriz = oci_parse($conn, "select * from huerta.Localizacion");
+                oci_execute($matriz);
+                echo 'var coord =[';
+                $fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS);
+                echo str_replace(",", ".", "{lat:" . $fila[1] . "");
+                echo ", ";
+                echo str_replace(",", ".", "lng: " . $fila[2] . "}");
+                while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
+                {
+                    echo ", ";
+                    echo str_replace(",", ".", "{lat:" . $fila[1] . "");
+                    echo ", ";
+                    echo str_replace(",", ".", "lng: " . $fila[2] . "}");
+                }
+                echo '];';
+                 ?>
 
-				var coord = [{lat: 9.99, lng: -84.22},{lat: 9.88, lng: -84.15},{lat: 9.93, lng: -84.03}];
 
 				coord.forEach(function(value)
 				{

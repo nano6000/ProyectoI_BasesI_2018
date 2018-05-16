@@ -1,6 +1,6 @@
 <?php
     //parametros de conexion (opcionales)
-    $basedatos = "localhost/orcl";
+    $basedatos = "localhost/bdHuerta";
     $usuario   = "huerta";
     $contra    = "huerta";
 

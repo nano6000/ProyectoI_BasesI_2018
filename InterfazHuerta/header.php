@@ -41,8 +41,8 @@
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownHuerta">
                                                 <a class="dropdown-item" href="crearHuerta.php">Nueva huerta</a>
-                                                <a class="dropdown-item" href="editHuerta.php">Editar</a>
-                                                <a class="dropdown-item" href="verHuertas.php">Ver</a>
+                                                <a class="dropdown-item" href="editHuerta.php">Editar huertas</a>
+                                                <a class="dropdown-item" href="verHuertas.php">Ver huertas</a>
                                             </div>
                                         </div>
                 					    <li class="nav-item">
@@ -72,9 +72,30 @@
                                         echo '<li class="nav-item">
                 							<a class="nav-link" href="#">Huertas</a>
                 						</li>';
-                                    echo '<li class="nav-item">
-                							<a class="nav-link" href="#">Plantas</a>
-                						</li>';
+                                    if ($tipo == 3)
+                                        echo '<div class="dropdown">
+                                                <button type="button" class="btn btn-success dropdown-toggle" id="dropdownPlanta" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                        Plantas
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownHuerta">
+                                                    <a class="dropdown-item" href="#">Nueva hortaliza</a>
+                                                    <a class="dropdown-item" href="#">Nuevo arbol</a>
+                                                    <a class="dropdown-item" href="#">Editar hortaliza</a>
+                                                    <a class="dropdown-item" href="#">Editar arbol</a>
+                                                    <a class="dropdown-item" href="Hortalizas.php">Ver hortalizas</a>
+                                                    <a class="dropdown-item" href="Arboles.php">Ver arboles</a>
+                                                </div>
+                                            </div>';
+                                    else
+                                        echo '<div class="dropdown">
+                                                <button type="button" class="btn btn-success dropdown-toggle" id="dropdownPlanta" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                        Plantas
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownHuerta">
+                                                    <a class="dropdown-item" href="Hortalizas.php">Ver hortalizas</a>
+                                                    <a class="dropdown-item" href="Arboles.php">Ver arboles</a>
+                                                </div>
+                                            </div>';
                                     break;
                             }
                         }

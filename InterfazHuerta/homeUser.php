@@ -24,9 +24,24 @@
 				    mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
 				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-				var coord = [{lat: 9.99, lng: -84.22},{lat: 9.88, lng: -84.15},{lat: 9.93, lng: -84.03}];
-
+                <?php
+                include_once 'scripts/conexion.inc';
+                $matriz = oci_parse($conn, "select * from huerta.Localizacion");
+                oci_execute($matriz);
+                echo 'var coord =[';
+                $fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS);
+                echo str_replace(",", ".", "{lat:" . $fila[1] . "");
+                echo ", ";
+                echo str_replace(",", ".", "lng: " . $fila[2] . "}");
+                while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
+                {
+                    echo ", ";
+                    echo str_replace(",", ".", "{lat:" . $fila[1] . "");
+                    echo ", ";
+                    echo str_replace(",", ".", "lng: " . $fila[2] . "}");
+                }
+                echo '];';
+                 ?>
 				coord.forEach(function(value)
 				{
 					var marker = new google.maps.Marker(

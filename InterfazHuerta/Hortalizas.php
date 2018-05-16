@@ -1,16 +1,5 @@
 <?php
     include_once 'header.php';
-    include_once 'scripts/conexion.inc';
-
-    if (isset($_SESSION['tipo']))
-    {
-        $tipo = $_SESSION['tipo'];
-        if ($tipo != 3)
-            header("Location: homeUser.php");
-    }
-    else
-        header("Location: homeUser.php");
-
 ?>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js" charset="utf-8"></script>
@@ -34,7 +23,7 @@
 
         echo "<div class='panel panel-default'>";
         echo "<div class='panel-heading'>";
-        echo "Lista de Huertas";
+        echo "Lista de Hortalizas";
         echo "</div>";
         echo "<div class='panel-body'>";
         echo "<div class='table-responsive'>";
@@ -42,15 +31,17 @@
         echo "<table width='100%' class='table table-fixed table-bordered table-hover table-condensed table-hover' id='data' style='font-size: 11px;'>";
         echo "<thead style='background-color: #f8f8f8;'>";
         echo '<tr>';
-        echo '<th>ID Huerta</th>';
+        echo '<th>ID Planta</th>';
         echo '<th>Nombre</th>';
-        echo '<th>Ubicacion</th>';
-        echo '<th>Coordenadas</th>';
+        echo '<th>Tipo</th>';
+        echo '<th>Color</th>';
+        echo '<th>Propiedades</th>';
+        echo '<th>Imagen</th>';
         echo '</tr>';
         echo '</thead>';
         echo '<tbody>';
 
-        include_once 'scripts/getHuertas.php';
+        include_once 'scripts/getHortaliza.php';
 
         echo "</tbody>";
         echo "</table>";
@@ -71,7 +62,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 
-</body>
 
-
- </html>
+    </body
+</html>

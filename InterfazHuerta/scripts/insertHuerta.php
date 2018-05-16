@@ -16,14 +16,20 @@
             $Xcoord = $_POST["Xpos-input"];
             $Ycoord = $_POST["Ypos-input"];
 
+
+
+$sql ="insert INTO huerta.huertaa(codigoHuerta, nombre, activo, ubicacion, localizacion) VALUES
+(huerta.seq_huerta.nextval,'".$nombre."', SI, 1, 1); commit;";
+
+
+
+
+
             $result = 0;
             // $sql = "BEGIN pck_huerta.insert_huerta(:nombre, :distrito, :Xcoord, :Ycoord); END;";
-            $sql = "insert INTO Huerta (codigoHuerta, nombre, activo, ubicacion, localizacion) VALUES (2, 'OtraHuerta', 'SI', 1, 1);";
+            //$sql = "insert INTO huerta.huertaa(codigoHuerta, nombre, activo, ubicacion, localizacion) VALUES (3, :nombre, SI, 1, 3);";
             $s = oci_parse($conn, $sql);
-            oci_bind_by_name($s, ':nombre', $nombre);
-            oci_bind_by_name($s, ':distrito', $distrito);
-            oci_bind_by_name($s, ':Xcoord', $Xcoord);
-            oci_bind_by_name($s, ':Ycoord', $Ycoord);
+            // oci_bind_by_name($s, ':nombre', $nombre);
             oci_execute($s);
 
             oci_close($conn);

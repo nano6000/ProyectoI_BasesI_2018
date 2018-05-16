@@ -3,8 +3,7 @@
 include_once 'scripts/conexion.inc';
     //$sql = "BEGIN :result := pck_consulta.getHuertas(); END;";
 
-    $matriz = oci_parse($conn, "select h.codigoHuerta, h.nombre, d.nombre, localizacion from huerta.huertaa h,
-            huerta.distrito d where h.ubicacion = d.codigo");
+    $matriz = oci_parse($conn, "select codigoHuerta, nombre, ubicacion, localizacion from nano.huerta");
     oci_execute($matriz);
     while ($fila = oci_fetch_array($matriz, OCI_NUM+OCI_RETURN_NULLS))
     {
@@ -13,7 +12,14 @@ include_once 'scripts/conexion.inc';
         echo "<td>" . $fila[1] . "</td>";
         echo "<td>" . $fila[2] . "</td>";
         echo "<td>" . $fila[3] . "</td>";
+        echo "<td>" . $fila[4] . "</td>";
+        $result = $fila[5]->load();
+        echo "<td>";
+        header("Content-type: image/jpeg");
 
+        print $result;
+
+        echo "</td>"
         echo "</tr>";
     }
 

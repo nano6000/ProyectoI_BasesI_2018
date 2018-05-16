@@ -99,7 +99,10 @@
         echo '<tr>';
         echo '<th>ID Huerta</th>';
         echo '<th>Nombre</th>';
-        echo '<th>Ubicacion</th>';
+        echo '<th>Pais</th>';
+        echo '<th>Provincia</th>';
+        echo '<th>Canton</th>';
+        echo '<th>Distrito</th>';
         echo '<th>Coordenada en X</th>';
         echo '<th>Coordenada en Y</th>';
         echo '<th>Editar</th>';
